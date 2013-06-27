@@ -1,8 +1,16 @@
+/* == Site Wide Styles ========================= */
+html { height: 100%; }
+body { height: 100%; }
 a { color: $whiteBeta; text-decoration: none; }
 
+.centered { max-width: 1200px; margin:0 auto; }
+
+
+/* == Header =================================== */
 .header 	{
 	background-color: $darkBeta;
-	padding:0 25px;
+	padding: 0 25px;
+	margin-bottom: 50px;
 
 	.logo {
 		position:relative;
@@ -32,5 +40,51 @@ a { color: $whiteBeta; text-decoration: none; }
 				@include transition-duration(.5s);
 			}
 		}
+	}
+}
+
+
+/* == Index ==================================== */
+.pageIndex {
+	height:100%;
+
+	.module {
+		position:relative;
+		padding: 20px;
+		color:$whiteAlpha;
+
+		h2 { padding-bottom: 15px; }
+		p { padding:0 0 10px; margin: 0 15px; }
+		.icon { width:75px; height:75px; background-color:$whiteAlpha; margin:50px auto; }
+
+		.description {
+			margin-top:20px;
+			width:100%;
+		}
+
+		.serverSide {
+			background-color: $greenAlpha;
+
+			.description { background-color: $greenBeta; }
+		}
+
+		.responsive {
+			background-color:$purpleAlpha;
+
+			.description { background-color: $purpleBeta; }
+
+		}
+
+		.frontEnd {
+			background-color:$blueAlpha;
+
+			.description { background-color:$blueBeta; }
+
+		}
+	}
+
+	.recentWork { 
+		background-color:$darkBeta;
+		height:300px;
 	}
 }
