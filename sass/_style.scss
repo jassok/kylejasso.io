@@ -1,0 +1,36 @@
+a { color: $whiteBeta; text-decoration: none; }
+
+.header 	{
+	background-color: $darkBeta;
+	padding:0 25px;
+
+	.logo {
+		position:relative;
+		float:left;
+	}
+	.menu {
+		position: relative;
+		float: right;
+		list-style: none;
+		display:inline-block;
+		padding: 25px 15px;
+		margin:0;
+
+		li 	{
+			text-align:left;
+			padding: 10px 50px 4px 10px;
+			margin:0 10px;
+			display:inline-block;
+			border-bottom:3px solid $greenBeta;
+
+			@include box-sizing(border-box);
+
+			&:hover {
+				a { color:$darkBeta; }
+				background-color:$greenBeta;
+				@include transition-property(background);
+				@include transition-duration(.5s);
+			}
+		}
+	}
+}

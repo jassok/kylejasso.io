@@ -1,0 +1,1097 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"ease",
+				"easeInQuint"
+			],
+			[
+				"easeInOutB",
+				"easeInOutBack"
+			],
+			[
+				"eas",
+				"easeInQuint"
+			],
+			[
+				"mysql_fetch_",
+				"mysql_fetch_assoc"
+			],
+			[
+				"mysql_fetch_a",
+				"mysql_fetch_assoc"
+			],
+			[
+				"img",
+				"imgContain"
+			],
+			[
+				"left",
+				"leftSide"
+			],
+			[
+				"cont",
+				"contestID"
+			],
+			[
+				"prima",
+				"primaryKeyVal"
+			],
+			[
+				"uni",
+				"uniqueID"
+			],
+			[
+				"prim",
+				"primarKeyVal"
+			],
+			[
+				"ima",
+				"imageURL"
+			],
+			[
+				"imag",
+				"imageLocation"
+			],
+			[
+				"primaryKey",
+				"primaryKeyVal"
+			],
+			[
+				"image",
+				"imageQuery"
+			],
+			[
+				"conte",
+				"contestID"
+			],
+			[
+				"ba",
+				"bannersRight"
+			],
+			[
+				"bann",
+				"bannersLeft"
+			],
+			[
+				"abo",
+				"absolute"
+			],
+			[
+				"posi",
+				"position:absolute"
+			],
+			[
+				"preloa",
+				"preloadedOptions"
+			],
+			[
+				"op",
+				"options"
+			],
+			[
+				"messa",
+				"messageFadeIn"
+			],
+			[
+				"center",
+				"centerImage"
+			],
+			[
+				"ani",
+				"animating"
+			],
+			[
+				"an",
+				"animating"
+			],
+			[
+				"dir",
+				"direction"
+			],
+			[
+				"drop",
+				"dropImage"
+			],
+			[
+				"prelo",
+				"preloadedOptions"
+			],
+			[
+				"update",
+				"updatePositions"
+			],
+			[
+				"mysql_fetch",
+				"mysql_fetch_assoc"
+			],
+			[
+				"mess",
+				"messageFadeIn"
+			],
+			[
+				"MAX",
+				"MAX_HEIGHT"
+			],
+			[
+				"up",
+				"updatePositions"
+			],
+			[
+				"upda",
+				"updateID"
+			],
+			[
+				"clear",
+				"clearTimeout"
+			],
+			[
+				"side",
+				"sideCounter"
+			],
+			[
+				"anim",
+				"animateTransition"
+			],
+			[
+				"mes",
+				"messageFadeIn"
+			],
+			[
+				"cSlider",
+				"cSliderTimer"
+			],
+			[
+				"sp",
+				"spositionID"
+			],
+			[
+				"tex",
+				"text-align"
+			],
+			[
+				"hi",
+				"color-highlight"
+			],
+			[
+				"bac",
+				"background"
+			],
+			[
+				"bacgr",
+				"background"
+			],
+			[
+				"filter",
+				"filter-gradient"
+			],
+			[
+				"font",
+				"font-size"
+			],
+			[
+				"in",
+				"inline-block"
+			],
+			[
+				"outt",
+				"outerHeight"
+			],
+			[
+				"nav",
+				"navigation-wide"
+			],
+			[
+				"ab",
+				"absolute"
+			],
+			[
+				"images",
+				"imagesLoaded"
+			],
+			[
+				"find",
+				"find"
+			],
+			[
+				"mysql_num",
+				"mysql_num_rows"
+			],
+			[
+				"me",
+				"media smartphone	smartphone"
+			],
+			[
+				"inl",
+				"inline"
+			],
+			[
+				"box",
+				"box-shadow"
+			],
+			[
+				"inline",
+				"inline-block"
+			],
+			[
+				"back",
+				"background"
+			],
+			[
+				"box-",
+				"box-shadow"
+			],
+			[
+				"lin",
+				"linear-gradient"
+			],
+			[
+				"window",
+				"window_focus"
+			],
+			[
+				"a",
+				"absolute"
+			],
+			[
+				"btn",
+				"btnText"
+			],
+			[
+				"cs",
+				"cScroller"
+			],
+			[
+				"q",
+				"Questrial"
+			],
+			[
+				"border",
+				"border-box"
+			],
+			[
+				"backg",
+				"background-position"
+			],
+			[
+				"text",
+				"text-align"
+			],
+			[
+				"color",
+				"color-highlight"
+			],
+			[
+				"bacgrou",
+				"background-color"
+			],
+			[
+				"box-s",
+				"box-sizing"
+			],
+			[
+				"background",
+				"background-color"
+			],
+			[
+				"curr",
+				"currentDirection"
+			],
+			[
+				"z",
+				"z-index"
+			],
+			[
+				"font-",
+				"font-family"
+			],
+			[
+				"backgroun",
+				"background-color"
+			],
+			[
+				"filte",
+				"filter_name"
+			],
+			[
+				"displ",
+				"display_block"
+			],
+			[
+				"disp",
+				"display_block"
+			],
+			[
+				"field",
+				"fieldPosition"
+			],
+			[
+				"bord",
+				"border-box"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "sass/_typography.scss",
+			"settings":
+			{
+				"buffer_size": 522,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "sass/_style.scss",
+			"settings":
+			{
+				"buffer_size": 632,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "sass/screen.scss",
+			"settings":
+			{
+				"buffer_size": 471,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "config.rb",
+			"settings":
+			{
+				"buffer_size": 924,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "sass/_framework.scss",
+			"settings":
+			{
+				"buffer_size": 1995,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "index.html",
+			"settings":
+			{
+				"buffer_size": 691,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "style/screen.css",
+			"settings":
+			{
+				"buffer_size": 5310,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "Packages/Compass/Compass.sublime-build",
+	"command_palette":
+	{
+		"height": 33.0,
+		"selected_items":
+		[
+			[
+				"lor",
+				"LoremIpsum: (5) a bit"
+			],
+			[
+				"pack",
+				"Package Control: Remove Package"
+			],
+			[
+				"sys",
+				"Set Syntax: SQF"
+			],
+			[
+				"syc",
+				"Set Syntax: C#"
+			],
+			[
+				"task",
+				"Tasks: Complete"
+			],
+			[
+				"n",
+				"Tasks: New"
+			],
+			[
+				"todo",
+				"Show TODOs: Project and open files"
+			],
+			[
+				"to",
+				"Show TODOs: Project and open files"
+			],
+			[
+				"syjs",
+				"Set Syntax: JSON"
+			],
+			[
+				"syj",
+				"Set Syntax: JSON"
+			],
+			[
+				"p",
+				"Package Control: List Packages"
+			],
+			[
+				"snip",
+				"Snippet: Input"
+			],
+			[
+				"syht",
+				"Set Syntax: HTML"
+			],
+			[
+				"build",
+				"Build: Build"
+			],
+			[
+				"pac",
+				"Package Control: List Packages"
+			],
+			[
+				"lorem",
+				"Snippet: Lorem ipsum"
+			],
+			[
+				"package",
+				"Package Control: Install Package"
+			],
+			[
+				"syja",
+				"Set Syntax: JavaScript"
+			],
+			[
+				"pace",
+				"Package Control: List Packages"
+			],
+			[
+				"sysa",
+				"Set Syntax: SASS"
+			],
+			[
+				"packa",
+				"Package Control: Install Package"
+			],
+			[
+				"PACKIN",
+				"Package Control: Install Package"
+			],
+			[
+				"packin",
+				"Package Control: Install Package"
+			],
+			[
+				"PACKAGE",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: re",
+				"Package Control: Remove Package"
+			]
+		],
+		"width": 579.0
+	},
+	"console":
+	{
+		"height": 125.0
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/Users/kylejasso/GitHub/kylejasso.io/sass/_reset.scss",
+		"/Users/kylejasso/GitHub/kylejasso.io/index.html",
+		"/Users/kylejasso/GitHub/kylejasso.io/sass/_framework",
+		"/Users/kylejasso/GitHub/kylejasso.io/sass/_mixins",
+		"/Users/kylejasso/GitHub/kylejasso.io/sass/style.scss",
+		"/Users/kylejasso/GitHub/kylejasso.io/sass/_responsive",
+		"/Users/kylejasso/GitHub/kylejasso.io/sass/_typography",
+		"/Users/kylejasso/GitHub/kylejasso.io/sass/print.scss",
+		"/Users/kylejasso/GitHub/kylejasso.io/sass/_typography.scss",
+		"/Users/kylejasso/GitHub/kylejasso.io/config.rb",
+		"/Users/kylejasso/GitHub/kylejasso.io/sass/screen.scss",
+		"/Users/kylejasso/GitHub/kylejasso.io/sass/_style.scss",
+		"/Users/kylejasso/Desktop/Brolik/WWR/admin/articles.php",
+		"/Users/kylejasso/Downloads/articles.sql",
+		"/Users/kylejasso/Desktop/Brolik/WWR/config.rb",
+		"/Users/kylejasso/Desktop/Brolik/WWR/footer.php",
+		"/Users/kylejasso/Desktop/Brolik/WWR/ajax-results.php",
+		"/Users/kylejasso/Desktop/Brolik/WWR/header.php",
+		"/Users/kylejasso/Desktop/Brolik/WWR/js/jquery.allPages.js",
+		"/Users/kylejasso/Desktop/Brolik/WWR/archive.php",
+		"/Users/kylejasso/Desktop/Brolik/WWR/sass/_framework.scss",
+		"/Users/kylejasso/Desktop/Brolik/WWR/sass/style.scss",
+		"/Users/kylejasso/Desktop/Brolik/WWR/index.php",
+		"/Users/kylejasso/Library/Application Support/Sublime Text 2/Packages/User/Default (OSX).sublime-keymap",
+		"/Users/kylejasso/Library/Application Support/Sublime Text 2/Packages/ColorPick/Default.sublime-commands",
+		"/Users/kylejasso/Library/Application Support/Sublime Text 2/Packages/ColorPicker/Default (OSX).sublime-keymap",
+		"/Users/kylejasso/Library/Application Support/Sublime Text 2/Packages/Default/Preferences.sublime-settings",
+		"/Users/kylejasso/Library/Application Support/Sublime Text 2/Packages/User/Preferences.sublime-settings",
+		"/Users/kylejasso/Desktop/Brolik/WWR/js/jquery.includes.js",
+		"/Users/kylejasso/Desktop/Brolik/COM-SPOT/sass/_framework.scss",
+		"/Users/kylejasso/Desktop/Brolik/COM-SPOT/footer.php",
+		"/Users/kylejasso/Desktop/Brolik/COM-SPOT/details.php",
+		"/Users/kylejasso/Desktop/Brolik/COM-SPOT/index.php",
+		"/Users/kylejasso/Desktop/Brolik/COM-SPOT/admin/legal.php",
+		"/Users/kylejasso/Desktop/Brolik/COM-SPOT/admin/contests.php",
+		"/Users/kylejasso/Desktop/Brolik/COM-SPOT/lib/local.settings.php",
+		"/Users/kylejasso/Desktop/Brolik/COM-SPOT/admin/header.php",
+		"/Users/kylejasso/Desktop/Brolik/COM-SPOT/sass/style.scss",
+		"/Users/kylejasso/Desktop/Brolik/COM-SPOT/admin/index.php",
+		"/Users/kylejasso/Desktop/Brolik/COM-SPOT/admin/eventImages.php",
+		"/Users/kylejasso/Desktop/Brolik/COM-SPOT/postEntry.php",
+		"/Users/kylejasso/Downloads/ajax-fancy-captcha-php/captcha/captcha.php",
+		"/Users/kylejasso/Downloads/ajax-fancy-captcha-php/example.html",
+		"/Users/kylejasso/Desktop/Brolik/COM-SPOT/admin/entries.php",
+		"/Users/kylejasso/Desktop/Brolik/COM-SPOT/admin/js/LEV_menuListJavascript.js",
+		"/Users/kylejasso/Desktop/Brolik/COM-SPOT/admin/style_admin.css",
+		"/Users/kylejasso/Desktop/Brolik/COM-SPOT/admin/js/LEV_admin.js",
+		"/Users/kylejasso/Desktop/Brolik/EVR Everlast/.htaccess",
+		"/Users/kylejasso/Desktop/Brolik/EVR Everlast/Video Assets/.htaccess",
+		"/Users/kylejasso/Desktop/Brolik/COM-SPOT/.gitignore",
+		"/Users/kylejasso/Desktop/Brolik/COM-SPOT/js/jquery.allPages.js",
+		"/Users/kylejasso/Downloads/jquery-simple-color-master/examples/index.html",
+		"/Users/kylejasso/Downloads/colorpicker/index.html",
+		"/Users/kylejasso/Desktop/Brolik/COM-SPOT/admin/test.csv",
+		"/Users/kylejasso/Desktop/Brolik/COM-SPOT/lib/settings.php",
+		"/Users/kylejasso/Desktop/Brolik/COM-SPOT/admin/style_tinyMCE.css",
+		"/Users/kylejasso/Desktop/Brolik/COM-SPOT/header.php",
+		"/Users/kylejasso/Desktop/Brolik/COM-SPOT/sass/ie.scss",
+		"/Users/kylejasso/Downloads/Socialite-master/demo/hover.html",
+		"/Users/kylejasso/Desktop/Brolik/COM-SPOT/admin/footer.php",
+		"/Users/kylejasso/Desktop/Brolik/COM-SPOT/test.php",
+		"/Users/kylejasso/Desktop/Brolik/COM-SPOT/admin/contestFields.php",
+		"/Users/kylejasso/Desktop/Brolik/COM-SPOT/admin/lib/functions.php",
+		"/Users/kylejasso/Desktop/Brolik/COM-SPOT/admin/examples.php",
+		"/Users/kylejasso/Desktop/Brolik/COM-SPOT/database.php",
+		"/Users/kylejasso/Desktop/Brolik/COM-SPOT/admin/signin.php",
+		"/Users/kylejasso/Desktop/Brolik/COM-SPOT/style.css",
+		"/Users/kylejasso/Desktop/checklist",
+		"/Users/kylejasso/Desktop/Brolik/COM-SPOT/spot.tractum.php",
+		"/Users/kylejasso/Desktop/Brolik/USV-Upstage-Video/html/screen_options.php",
+		"/Users/kylejasso/Desktop/Brolik/USV-Upstage-Video/html/production_services.php",
+		"/Users/kylejasso/Desktop/Brolik/USV-Upstage-Video/html/js/jquery.general.js",
+		"/Users/kylejasso/Desktop/Brolik/USV-Upstage-Video/html/sass/screen.scss",
+		"/Users/kylejasso/Desktop/Brolik/USV-Upstage-Video/html/js/jquery.cSlider.js",
+		"/Users/kylejasso/Desktop/Brolik/USV-Upstage-Video/html/index.php",
+		"/Users/kylejasso/Desktop/Brolik/USV-Upstage-Video/html/database.php",
+		"/Users/kylejasso/Desktop/Brolik/USV-Upstage-Video/html/header.php",
+		"/Users/kylejasso/Desktop/Brolik/USV-Upstage-Video/html/js/jquery.index.js",
+		"/Users/kylejasso/Desktop/Brolik/USV-Upstage-Video/html/admin/productBlurbs.php",
+		"/Users/kylejasso/Desktop/Brolik/USV-Upstage-Video/html/admin/index.php",
+		"/Users/kylejasso/Desktop/Brolik/USV-Upstage-Video/html/admin/productBanners.php",
+		"/Users/kylejasso/Desktop/Brolik/USV-Upstage-Video/html/js/jquery.screen.js",
+		"/Users/kylejasso/Desktop/Brolik/USV-Upstage-Video/html/admin/homepageBanners.php",
+		"/Users/kylejasso/Desktop/Brolik/USV-Upstage-Video/html/js/jquery.production.js",
+		"/Users/kylejasso/Desktop/Brolik/USV-Upstage-Video/.gitignore",
+		"/Users/kylejasso/Desktop/Brolik/USV-Upstage-Video/html/sftp-config.json",
+		"/Users/kylejasso/Desktop/Brolik/USV-Upstage-Video/sftp-config.json",
+		"/Users/kylejasso/Desktop/Brolik/USV-Upstage-Video/html/config.rb",
+		"/Users/kylejasso/Desktop/Brolik/USV-Upstage-Video/html/sass/_framework.scss",
+		"/Users/kylejasso/Desktop/Brolik/USV-Upstage-Video/html/screen.php",
+		"/Users/kylejasso/Desktop/Brolik/USV-Upstage-Video/html/stylesheets/screen.css",
+		"/Users/kylejasso/Desktop/Brolik/USV-Upstage-Video/html/footer.php",
+		"/Users/kylejasso/Desktop/Brolik/USV-Upstage-Video/html/blog/wp-content/themes/USV/footer.php",
+		"/Users/kylejasso/Desktop/Brolik/USV-Upstage-Video/html/footer_bk.php",
+		"/Users/kylejasso/Desktop/Brolik/USV-Upstage-Video/html/pricing.php",
+		"/Users/kylejasso/Desktop/Brolik/USV-Upstage-Video/html/js/IE/jquery.pricing.js",
+		"/Users/kylejasso/Desktop/Brolik/USV-Upstage-Video/html/sass/ie.scss",
+		"/Users/kylejasso/Desktop/Brolik/USV-Upstage-Video/html/about.php",
+		"/Users/kylejasso/Desktop/Brolik/USV-Upstage-Video/html/js/jquery.pricing.js",
+		"/Users/kylejasso/Desktop/Brolik/USV-Upstage-Video/html/contact.php",
+		"/Users/kylejasso/Desktop/Brolik/USV-Upstage-Video/html/faq.php",
+		"/Users/kylejasso/Desktop/Brolik/USV-Upstage-Video/html/js/jquery.includes.js",
+		"/Users/kylejasso/Desktop/Brolik/USV-Upstage-Video/html/js/respond.js",
+		"/Users/kylejasso/Downloads/selectivizr-1.0.2/selectivizr-min.js",
+		"/Users/kylejasso/Desktop/Brolik/USV-Upstage-Video/html/js/selectivizr.js",
+		"/Users/kylejasso/Desktop/Brolik/USV-Upstage-Video/html/js/chosen.jquery.js",
+		"/Users/kylejasso/Desktop/Brolik/USV-Upstage-Video/html/js/form.js",
+		"/Users/kylejasso/Desktop/Brolik/USV-Upstage-Video/html/js/jquery-ui-1.8.dateAndSort.js",
+		"/Users/kylejasso/Desktop/Brolik/USV-Upstage-Video/html/js/jquery.scrollTo-1.4.2.js",
+		"/Users/kylejasso/Desktop/Brolik/USV-Upstage-Video/html/js/brolik_platform.js",
+		"/Users/kylejasso/Desktop/Brolik/USV-Upstage-Video/html/js/jquery.brolik.platform.js",
+		"/Users/kylejasso/Desktop/Brolik/USV-Upstage-Video/html/meta.php",
+		"/Users/kylejasso/Desktop/Brolik/USV-Upstage-Video/html/blog/wp-content/themes/USV/header.php",
+		"/Users/kylejasso/Desktop/Brolik/USV-Upstage-Video/html/admin/header.php",
+		"/Users/kylejasso/Desktop/Brolik/USV-Upstage-Video/html/admin/outdoorScreens.php",
+		"/Users/kylejasso/Desktop/Brolik/USV-Upstage-Video/html/sass/framework.scss",
+		"/Users/kylejasso/Desktop/Brolik/USV-Upstage-Video/html/admin/style_skeleton.css",
+		"/Users/kylejasso/Desktop/Brolik/USV-Upstage-Video/html/js/jquery.1.8.2.js",
+		"/Users/kylejasso/Desktop/Brolik/USV-Upstage-Video/html/js/jquery.faq.js",
+		"/Applications/MAMP/conf/apache/httpd.conf",
+		"/Users/kylejasso/Desktop/Brolik/USV-Upstage-Video/html/install.php",
+		"/Users/kylejasso/Library/Application Support/Sublime Text 2/Packages/User/Snippets/.gitignore",
+		"/Users/kylejasso/Library/Application Support/Sublime Text 2/Packages/User/Snippets/README.md",
+		"/Users/kylejasso/Desktop/Brolik/USV-Upstage-Video/html/404.php",
+		"/Users/kylejasso/Desktop/Brolik/USV-Upstage-Video/html/UpstageVideo.sublime-project",
+		"/Users/kylejasso/Library/Application Support/Sublime Text 2/Packages/SublimeTODO/README.markdown",
+		"/Users/kylejasso/Library/Application Support/Sublime Text 2/Packages/SublimeTODO/Default (OSX).sublime-mousemap",
+		"/Users/kylejasso/Library/Application Support/Sublime Text 2/Packages/SublimeTODO/Default.sublime-commands"
+	],
+	"find":
+	{
+		"height": 33.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+			""
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"gangum",
+			"=",
+			".",
+			"=",
+			":",
+			"=",
+			"\";",
+			"'",
+			"feed",
+			"$q[weekID]",
+			"enableSUNDAYS",
+			"'",
+			": ",
+			" ;",
+			"\n",
+			"{",
+			"600",
+			"easeInBack",
+			"1000",
+			"duration",
+			"easeInQuint",
+			"400",
+			"animate",
+			"slideDown",
+			"funtion",
+			"easeInQuint",
+			"slideUp",
+			"easeInOutQuad",
+			"slide",
+			"$this.next('.results')",
+			"wks",
+			"$week",
+			"week",
+			"or die(mysql_error())",
+			"terms",
+			"echo",
+			"tiny",
+			"echo",
+			"parent",
+			":",
+			",",
+			":",
+			"slideContentDiv",
+			"content",
+			" ;}",
+			"date('m/d/Y', ",
+			"css",
+			"Title",
+			"html",
+			"url",
+			"Link",
+			"half",
+			";",
+			"left",
+			"\"",
+			"echo",
+			"<span",
+			"left",
+			"leftRibbon",
+			"left",
+			"leftSide",
+			"()",
+			"('",
+			"ld",
+			"left",
+			"image",
+			"title",
+			"mq",
+			"addBanner",
+			"test",
+			"mq",
+			"mysql_num_rows($imageQuery)",
+			"imageQuery",
+			"title",
+			"<?php echo $mq[title]; ?>",
+			"title",
+			"column",
+			"\">",
+			"textarea",
+			"datevar",
+			"image",
+			"blurb",
+			"next()",
+			"next",
+			"append",
+			"$next",
+			"current",
+			"slider2",
+			"<li>",
+			"12",
+			"column",
+			"Arrow",
+			"Raleway",
+			"{",
+			"type=\"checkbox",
+			"<p",
+			"checkbox",
+			"column",
+			"class",
+			"month",
+			"absolute",
+			"options.preload-1",
+			"class",
+			"where",
+			"indoor",
+			"title",
+			"updateID",
+			"p ++",
+			"p++",
+			"++",
+			"sposition",
+			"var",
+			"    ",
+			" var p",
+			"==",
+			"var imgPos",
+			"var",
+			"(var i",
+			"var i",
+			"	",
+			"function(",
+			"function",
+			":",
+			">>>>",
+			"0px",
+			"55p",
+			"{",
+			"margin-bottom:0;"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"	",
+			"    "
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": false
+	},
+	"groups":
+	[
+		{
+			"selected": 5,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "sass/_typography.scss",
+					"settings":
+					{
+						"buffer_size": 522,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								423,
+								423
+							]
+						],
+						"settings":
+						{
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/SASS/Syntaxes/SASS.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "sass/_style.scss",
+					"settings":
+					{
+						"buffer_size": 632,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								328,
+								328
+							]
+						],
+						"settings":
+						{
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/SASS/Syntaxes/SASS.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "sass/screen.scss",
+					"settings":
+					{
+						"buffer_size": 471,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								18,
+								18
+							]
+						],
+						"settings":
+						{
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/SASS/Syntaxes/SASS.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "config.rb",
+					"settings":
+					{
+						"buffer_size": 924,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								639,
+								639
+							]
+						],
+						"settings":
+						{
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/Ruby/Ruby.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "sass/_framework.scss",
+					"settings":
+					{
+						"buffer_size": 1995,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1640,
+								1640
+							]
+						],
+						"settings":
+						{
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/SASS/Syntaxes/SASS.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 501.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "index.html",
+					"settings":
+					{
+						"buffer_size": 691,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								673,
+								673
+							]
+						],
+						"settings":
+						{
+							"incomplete_sync": null,
+							"is_xml": false,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "style/screen.css",
+					"settings":
+					{
+						"buffer_size": 5310,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								4986,
+								4986
+							]
+						],
+						"settings":
+						{
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/CSS/CSS.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 936.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 0.0
+	},
+	"input":
+	{
+		"height": 31.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.csslint_result_view":
+	{
+		"height": 98.0
+	},
+	"output.exec":
+	{
+		"height": 110.0
+	},
+	"output.sftp":
+	{
+		"height": 98.0
+	},
+	"replace":
+	{
+		"height": 62.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+			[
+				"hea",
+				"html/header.php"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"selected_items":
+		[
+		],
+		"width": 380.0
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 236.0,
+	"status_bar_visible": true
+}

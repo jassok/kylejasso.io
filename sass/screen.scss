@@ -1,0 +1,20 @@
+@import "compass";
+
+/* == Color Scheme ============================= */
+$greenAlpha  : #2ecc71;		$blueAlpha   : #3498db;
+$greenBeta   : #27ae60;		$blueBeta    : #2980b9;
+
+$purpleAlpha : #9b59b6;		$whiteAlpha  : #ecf0f1;
+$purpleBeta  : #8e44ad;		$whiteBeta   : #bdc3c7;
+
+$lightAlpha  : #95a5a6;		$darkAlpha   : #34495e;
+$lightBeta   : #7f8c8d;		$darkBeta    : #2c3e50;
+
+
+@import "framework";
+@import "mixins";
+
+@import "typography";
+@import "style";
+
+@import "responsive";

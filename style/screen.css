@@ -1,0 +1,72 @@
+/* == Color Scheme ============================= */
+/* == Grid Variables =========================== */
+/* == Functions ================================ */
+/* == Grid System ============================= */
+.full { position: relative; float: left; width: 100%; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; margin: 0; }
+
+.half { position: relative; float: left; width: 50%; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; margin: 0; }
+
+.one-third { position: relative; float: left; width: 33.33333%; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; margin: 0; }
+
+.two-thirds { position: relative; float: left; width: 66.66667%; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; margin: 0; }
+
+.c1 { position: relative; float: left; width: 6.25%; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; margin: 0; }
+
+.c2 { position: relative; float: left; width: 12.5%; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; margin: 0; }
+
+.c3 { position: relative; float: left; width: 18.75%; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; margin: 0; }
+
+.c4 { position: relative; float: left; width: 25%; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; margin: 0; }
+
+.c5 { position: relative; float: left; width: 31.25%; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; margin: 0; }
+
+.c6 { position: relative; float: left; width: 37.5%; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; margin: 0; }
+
+.c7 { position: relative; float: left; width: 43.75%; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; margin: 0; }
+
+.c8 { position: relative; float: left; width: 50%; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; margin: 0; }
+
+.c9 { position: relative; float: left; width: 56.25%; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; margin: 0; }
+
+.c10 { position: relative; float: left; width: 62.5%; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; margin: 0; }
+
+.c11 { position: relative; float: left; width: 68.75%; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; margin: 0; }
+
+.c12 { position: relative; float: left; width: 75%; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; margin: 0; }
+
+.c13 { position: relative; float: left; width: 81.25%; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; margin: 0; }
+
+.c14 { position: relative; float: left; width: 87.5%; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; margin: 0; }
+
+.c15 { position: relative; float: left; width: 93.75%; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; margin: 0; }
+
+.c16 { position: relative; float: left; width: 100%; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; margin: 0; }
+
+/* == Base Styles ============================= */
+body { color: #000; font-family: Helvetica, Arial, sans-serif; font-size: 18; line-height: 1ems; letter-spacing: .75; -webkit-font-smoothing: antialiased; -webkit-text-size-adjust: 100%; margin: 0; padding: 0; }
+
+img { max-width: 100%; -ms-interpolation-mode: bicubic; }
+
+.clearfix:before, .clearfix:after { content: '\0020'; display: block; overflow: hidden; visibility: hidden; width: 0; height: 0; clear: both; }
+
+@media only screen and (min-width: 960px) { .noDesktop { display: none; } }
+@media only screen and (min-width: 768px) and (max-width: 991px) { .noTablet { display: none; } }
+@media only screen and (max-width: 767px) { .half, .one-third, .two-thirds, .c1, .c2, .c3, .c4, .c5, .c6, .c7, .c8, .c9, .c10, .c11, .c12, .c13, .c14, .c15, .c16 { position: relative; float: left; width: 100%; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; margin: 0; } }
+/*
+| _typography.scss
+| 6/24/2013 Kylejasso.io
+*/
+/* == Typography =============================== */
+/* == Headings ================================= */
+h1, h2, h3, h4, h5, h6 { margin: 0; padding: 25px 15px; }
+
+h1 { font-size: 4.6875 px; color: #27ae60; }
+
+a { color: #bdc3c7; text-decoration: none; }
+
+.header { background-color: #2c3e50; padding: 0 25px; }
+.header .logo { position: relative; float: left; }
+.header .menu { position: relative; float: right; list-style: none; display: inline-block; padding: 25px 15px; margin: 0; }
+.header .menu li { text-align: left; padding: 10px 50px 4px 10px; margin: 0 10px; display: inline-block; border-bottom: 3px solid #27ae60; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
+.header .menu li:hover { background-color: #27ae60; -webkit-transition-property: background; -moz-transition-property: background; -o-transition-property: background; transition-property: background; -webkit-transition-duration: 0.5s; -moz-transition-duration: 0.5s; -o-transition-duration: 0.5s; transition-duration: 0.5s; }
+.header .menu li:hover a { color: #2c3e50; }

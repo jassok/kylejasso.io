@@ -1,0 +1,78 @@
+/* == Grid Variables =========================== */
+$columns      : 16;
+$column-width : 50px;
+$max-width    : $columns * $column-width;
+
+/* == Functions ================================ */
+@function percent($width, $container-width: $max-width) {
+	@return percentage($width / $container-width)
+}
+
+@mixin col($n, $container-width: $max-width) {
+	position: relative;
+	float: left;
+	width: percentage(($n * $column-width) / $container-width);
+  	@include box-sizing(border-box);
+  	margin: 0;
+}
+
+/* == Grid System ============================= */
+.full 			{ @include col(16); }
+.half			{ @include col(8); }
+.one-third 		{ @include col($columns / 3); }
+.two-thirds 	{ @include col(($columns / 3) * 2); }
+
+.c1 			{ @include col(1); }
+.c2 			{ @include col(2); }
+.c3 			{ @include col(3); }
+.c4 			{ @include col(4); }
+.c5 			{ @include col(5); }
+.c6 			{ @include col(6); }
+.c7 			{ @include col(7); }
+.c8 			{ @include col(8); }
+.c9 			{ @include col(9); }
+.c10 			{ @include col(10); }
+.c11 			{ @include col(11); }
+.c12 			{ @include col(12); }
+.c13 			{ @include col(13); }
+.c14 			{ @include col(14); }
+.c15 			{ @include col(15); }
+.c16 			{ @include col(16); }
+
+/* == Base Styles ============================= */
+body {
+	color: #000;
+	font-family: Helvetica, Arial, sans-serif;
+	font-size:18;
+	line-height: 1ems;
+	letter-spacing:.75;
+	-webkit-font-smoothing: antialiased;
+	-webkit-text-size-adjust: 100%;
+	margin:0;
+	padding:0;
+}
+
+img {
+	max-width: 100%;
+    -ms-interpolation-mode: bicubic;
+}
+
+
+.clearfix:before,
+.clearfix:after     { content:'\0020'; display:block; overflow:hidden; visibility: hidden; width:0; height:0; clear:both; }
+
+
+
+@media only screen and (min-width: 960px) {
+	.noDesktop 	{ display: none; }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+	.noTablet 	{ display: none; }
+}
+
+@media only screen and (max-width: 767px) {
+	.half,.one-third,.two-thirds,.c1,.c2,.c3,
+	.c4,.c5,.c6,.c7,.c8,.c9,.c10,.c11,.c12,.c13,
+	.c14,.c15,.c16 { @include col(16); }
+}
