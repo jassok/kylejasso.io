@@ -3,7 +3,7 @@ html { height: 100%; }
 body { height: 100%; }
 a { color: $whiteBeta; text-decoration: none; }
 
-.centered { max-width: 1200px; margin:0 auto; }
+.centered { max-width: 1400px; margin:0 auto; }
 
 
 /* == Header =================================== */
@@ -83,8 +83,12 @@ a { color: $whiteBeta; text-decoration: none; }
 		}
 	}
 
-	.recentWork { 
+	.recentWork {
 		background-color:$darkBeta;
 		height:300px;
 	}
 }
+
+/* == Masonry ================================== */
+
+
