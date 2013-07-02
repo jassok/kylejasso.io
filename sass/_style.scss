@@ -94,10 +94,62 @@ a { color: $whiteBeta; text-decoration: none; }
 
 /* == Masonry ================================== */
 $maxSize: 520; /* 260 */ $minSize: 320; /* 160 */
-.ms 		{ @include box-sizing(border-box); background-color:#ccc; width:60px; height: 60px; margin:10px; }
-.ms-wide 	{ width:$maxSize+px; height:$minSize+px; } // cc rso
-.ms-small 	{ width:$minSize+px; height:$minSize+px; } // up alsf
-.ms-large 	{ width:$maxSize+px; height: $maxSize+px; } // math cheng
-.ms-tall 	{ width:$minSize+px; height:$maxSize+px; } // eventspot
+.ms {
+	background-color:#ccc;
+	width:60px;
+	height: 60px;
+	margin:10px;
+	@include box-sizing(border-box);
+	@include transition-property(background);
+	@include transition-duration(.5s);
+
+	&.ms-wide { // PIF & RSO & SWOOP
+		width:$maxSize+px;
+		height:$minSize+px;
+		&:hover {
+			background-color:$lightAlpha;
+			@include transition-property(background);
+			@include transition-duration(.5s);
+		 }
+	}
+
+	&.ms-small { // USV & ALSF
+		width:$minSize+px;
+		height:$minSize+px;
+		&:hover {
+			background-color:$lightAlpha;
+			@include transition-property(background);
+			@include transition-duration(.5s);
+		 }
+	}
+
+	&.ms-large { // MATH & CC
+		width:$maxSize+px;
+		height: $maxSize+px;
+		background-color:#ccc;
+		&:hover {
+			background-color:$lightAlpha;
+			@include transition-property(background);
+			@include transition-duration(.5s);
+		 }
+	}
+
+	&.ms-tall { // COM SPOT
+		width:$minSize+px;
+		height:$maxSize+px;
+		&:hover {
+			background-color:$lightAlpha;
+			@include transition-property(background);
+			@include transition-duration(.5s);
+		 }
+	}
+
+	.bwWrapper {
+		position:relative;
+		display:block;
+	}
+}
+
+
 
 

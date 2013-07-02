@@ -11,6 +11,7 @@
 	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.js"></script>
 
 	<script type="text/javascript" src="js/masonary.min.js"></script>
+	<script type="text/javascript" src="js/BlackAndWhite.js"></script>
 
 	<script type="text/javascript">
 		$(function () {
@@ -87,13 +88,29 @@
 						columnWidth:1,
 						itemSelector: '.ms'
 					});
+
+					$(window).load(function () {
+						$('.bwWrapper').BlackAndWhite({
+							hoverEffect : true,
+							webworkerPatch : false,
+							responsive : true,
+							invertHoverEffect : false,
+							speed : {
+								fadeIn : 200,
+								fadeOut : 800
+							},
+							onImageReady : function(img) {
+
+							}
+						})
+					})
 				});
 			</script>
 
 			<div class="clearfix">
 				<div id="container" style="margin:0 -10px;">
 					<div class="ms ms-wide"><h2>Lockblox</h2></div>
-					<div class="ms ms-large"><h2>Cheng Crowns</h2></div>
+					<div class="ms ms-large"><div class="bwWrapper"><img src="images/ms-large-CC.png" alt="Cheng Crowns" /></div></div>
 					<div class="ms ms-tall"><h2>Comcast Event Spot</h2></div>
 					<div class="ms ms-large"><h2>Monster Math</h2></div>
 					<div class="ms ms-wide"><h2>Comcast Philly in Focus</h2></div>

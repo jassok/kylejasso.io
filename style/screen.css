@@ -110,12 +110,13 @@ a { color: #bdc3c7; text-decoration: none; }
 /* == Masonry ================================== */
 /* 260 */
 /* 160 */
-.ms { -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; background-color: #ccc; width: 60px; height: 60px; margin: 10px; }
-
-.ms-wide { width: 520px; height: 320px; }
-
-.ms-small { width: 320px; height: 320px; }
-
-.ms-large { width: 520px; height: 520px; }
-
-.ms-tall { width: 320px; height: 520px; }
+.ms { background-color: #ccc; width: 60px; height: 60px; margin: 10px; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; -webkit-transition-property: background; -moz-transition-property: background; -o-transition-property: background; transition-property: background; -webkit-transition-duration: 0.5s; -moz-transition-duration: 0.5s; -o-transition-duration: 0.5s; transition-duration: 0.5s; }
+.ms.ms-wide { width: 520px; height: 320px; }
+.ms.ms-wide:hover { background-color: #95a5a6; -webkit-transition-property: background; -moz-transition-property: background; -o-transition-property: background; transition-property: background; -webkit-transition-duration: 0.5s; -moz-transition-duration: 0.5s; -o-transition-duration: 0.5s; transition-duration: 0.5s; }
+.ms.ms-small { width: 320px; height: 320px; }
+.ms.ms-small:hover { background-color: #95a5a6; -webkit-transition-property: background; -moz-transition-property: background; -o-transition-property: background; transition-property: background; -webkit-transition-duration: 0.5s; -moz-transition-duration: 0.5s; -o-transition-duration: 0.5s; transition-duration: 0.5s; }
+.ms.ms-large { width: 520px; height: 520px; background-color: #ccc; }
+.ms.ms-large:hover { background-color: #95a5a6; -webkit-transition-property: background; -moz-transition-property: background; -o-transition-property: background; transition-property: background; -webkit-transition-duration: 0.5s; -moz-transition-duration: 0.5s; -o-transition-duration: 0.5s; transition-duration: 0.5s; }
+.ms.ms-tall { width: 320px; height: 520px; }
+.ms.ms-tall:hover { background-color: #95a5a6; -webkit-transition-property: background; -moz-transition-property: background; -o-transition-property: background; transition-property: background; -webkit-transition-duration: 0.5s; -moz-transition-duration: 0.5s; -o-transition-duration: 0.5s; transition-duration: 0.5s; }
+.ms .bwWrapper { position: relative; display: block; }
