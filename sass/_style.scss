@@ -67,7 +67,7 @@ $borderColor: #102A3E;
 		color: #33df33;
 		height:350px;
 		border:1px solid $borderColor;
-		padding:0 5px;
+		padding:0 5px 25px;
 		overflow-y:scroll;
 	}
 
@@ -76,6 +76,7 @@ $borderColor: #102A3E;
 		bottom:0;
 		right:1px;
 		width:100%;
+		color: #33df33;
 
 		input {
 			float:left;
