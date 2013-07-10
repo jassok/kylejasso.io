@@ -12,7 +12,7 @@ $line-height      : 1.65;
 $font-size        : 112.5; // (16 * 112.5% = 18px)
 $font-base        : 16 * ($font-size / 100);
 $font-family      : serif;
-$font-family-sans : 'Pathway Gothic One';
+$font-family-sans : 'Lucida';
 
 /* == Main Styles ============================== */
 body { font-family: $font-family-sans; line-height: $line-height; font-size:($font-base+px); }

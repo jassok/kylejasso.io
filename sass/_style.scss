@@ -5,151 +5,89 @@ a { color: $whiteBeta; text-decoration: none; }
 
 .centered { max-width: 1400px; margin:0 auto; }
 
+$borderColor: #102A3E;
 
-/* == Header =================================== */
-.header {
-	background-color: $darkBeta;
-	padding: 0 25px;
-	margin-bottom: 50px;
 
-	.logo {
-		position:relative;
-		float:left;
-	}
-	.menu {
-		position: relative;
-		float: right;
-		list-style: none;
-		display:inline-block;
-		padding: 25px 15px;
-		margin:0;
 
-		li 	{
-			text-align:left;
-			padding: 10px 50px 4px 10px;
-			margin:0 10px;
-			display:inline-block;
-			border-bottom:3px solid $greenBeta;
+.prompt {
+	position:relative;
+	margin:50px auto;
+	padding:5px 7px 7px;
+	border: 1px solid $borderColor;
+	width:70%;
+	font-size:15px;
 
-			@include box-sizing(border-box);
-
-			&:hover {
-				a { color:$darkBeta; }
-				background-color:$greenBeta;
-				@include transition-property(background);
-				@include transition-duration(.5s);
-			}
-		}
-	}
-}
-/* == Footer =================================== */
-.footer {
-	margin-top:50px;
-	background-color:$whiteBeta;
-}
-
-/* == Index ==================================== */
-.pageIndex {
-	height:100%;
-
-	.module {
-		position:relative;
-		padding: 20px;
-		color:$whiteAlpha;
-
-		h2 		{ padding-bottom: 15px; }
-		p 		{ padding:0 0 10px; margin: 0 15px; }
-		.icon 	{ width:75px; height:75px; background-color:$whiteAlpha; margin:50px auto; }
-
-		.description {
-			margin-top:20px;
-			width:100%;
-		}
-
-		.serverSide {
-			background-color: $greenAlpha;
-			margin-left:-20px;
-			.description { background-color: $greenBeta; }
-		}
-
-		.responsive {
-			background-color:$purpleAlpha;
-			.description { background-color: $purpleBeta; }
-
-		}
-
-		.frontEnd {
-			background-color:$blueAlpha;
-			margin-right:-20px;
-			.description { background-color:$blueBeta; }
-
-		}
-	}
-
-	.recentWork {
-		background-color:$darkBeta;
-		height:300px;
-	}
-}
-
-/* == Masonry ================================== */
-$maxSize: 520; /* 260 */ $minSize: 320; /* 160 */
-.ms {
-	background-color:#ccc;
-	width:60px;
-	height: 60px;
-	margin:10px;
+	@include box-shadow(0 0 1px #ffffff inset);
+	@include background-image(linear-gradient(center top, rgba(50,123,165,0.75) 0%, rgba(46,75,90,0.75) 50%, rgba(92,176,220,0.75)));
+	@include border-radius(5px);
 	@include box-sizing(border-box);
-	@include transition-property(background);
-	@include transition-duration(.5s);
 
-	&.ms-wide { // PIF & RSO & SWOOP
-		width:$maxSize+px;
-		height:$minSize+px;
-		&:hover {
-			background-color:$lightAlpha;
-			@include transition-property(background);
-			@include transition-duration(.5s);
-		 }
+	.header {
+		height:25px;
+		margin-bottom:5px;
+
+		.mini {
+			position:absolute;
+			top:0px;
+			right: 72px;
+			height:15px;
+			width:30px;
+			border: 1px solid $borderColor;
+			border-top:none;
+
+			@include border-radius(0 0 0 5px);
+
+		}
+		.full {
+			position:absolute;
+			top:0px;
+			right: 42px;
+			height:16px;
+			width:30px;
+			border-bottom: 1px solid $borderColor;
+
+		}
+		.close {
+			position:absolute;
+			top:0px;
+			right: 10px;
+			height:15px;
+			width:30px;
+			border: 1px solid $borderColor;
+			border-top:none;
+
+			@include border-radius(0 0 5px 0);
+			@include background-image(linear-gradient(top, rgba(169,3,41,0.75) 0%,rgba(143,2,34,0.75) 44%,rgba(109,0,25,0.75) 100%));
+
+		}
 	}
-
-	&.ms-small { // USV & ALSF
-		width:$minSize+px;
-		height:$minSize+px;
-		&:hover {
-			background-color:$lightAlpha;
-			@include transition-property(background);
-			@include transition-duration(.5s);
-		 }
-	}
-
-	&.ms-large { // MATH & CC
-		width:$maxSize+px;
-		height: $maxSize+px;
-		background-color:#ccc;
-		&:hover {
-			background-color:$lightAlpha;
-			@include transition-property(background);
-			@include transition-duration(.5s);
-		 }
-	}
-
-	&.ms-tall { // COM SPOT
-		width:$minSize+px;
-		height:$maxSize+px;
-		&:hover {
-			background-color:$lightAlpha;
-			@include transition-property(background);
-			@include transition-duration(.5s);
-		 }
-	}
-
-	.bwWrapper {
+	.body {
 		position:relative;
-		display:block;
+		background: #000;
+		color: #33df33;
+		height:350px;
+		border:1px solid $borderColor;
+		padding:0 5px;
+		overflow-y:scroll;
+	}
+
+	.input {
+		position: absolute;
+		bottom:0;
+		right:1px;
+		width:100%;
+
+		input {
+			float:left;
+			border:none;
+			padding:5px;
+			width:70%;
+			background-color:#000;
+			color:#33df33;
+		}
+		.path {
+			float: left;
+			margin:0 3px 3px 0;
+		}
 	}
 }
-
-
-
-
