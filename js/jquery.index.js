@@ -11,6 +11,26 @@ function pushFooter() {
 
 $(function () {
 
+	function specialReturn(code) {
+		code = code.split('|');
+
+		var option, project;
+
+		option = code[1];
+		project = code[2];
+
+		if(option == 1){
+			$.ajax({
+				type: "POST",
+				url: "class.syntax.php",
+				data: { proj:project }
+			}).done(function( msg ) {
+				$('.popUp').popUp(msg);
+			});
+		}
+
+	}
+
 	$(window).on("ready load resize", pushFooter);
 
 	$(window).load(function () {
@@ -73,6 +93,8 @@ $(function () {
 
 							if(msg == 'clear') {
 								$('.body').html('');
+							} else if (msg.indexOf('1 |') >= 0) {
+								specialReturn(msg);
 							} else {
 								$('.body').append(msg);
 
@@ -83,10 +105,7 @@ $(function () {
 						$('.body').append('<p>An error has occoured with command.');
 					}
 
-
-
 			        $command.val('');
-
 		    	}
 		    }
 		});
@@ -106,7 +125,7 @@ $(function () {
 		}
 	});
 
-	$('.close').click(function () {
+	$('.command').find('.close').click(function () {
 		$('.command').slideUp();
 		$('.work').css('box-shadow','none');
 	});

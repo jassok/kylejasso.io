@@ -61,6 +61,32 @@ img {
 .clearfix:before,
 .clearfix:after     { content:'\0020'; display:block; overflow:hidden; visibility: hidden; width:0; height:0; clear:both; }
 
+.popUp {
+	position:absolute;
+	left:50%;
+	z-index:99;
+	display:none;
+	background:#fff;
+	margin-top:6%;
+	padding:ems(20px);
+	border:4px solid #000;
+	width:90%;
+
+    @include box-shadow(0 0 10px #ccc);
+
+
+}
+
+ .browserDimmer {
+	background:rgba(255,255,255,.8);
+	width:100%;
+	height:100%;
+    position:fixed;
+    top:0;
+    left:0;
+    z-index:98;
+    display:none;
+}
 
 
 @media only screen and (min-width: 960px) {
