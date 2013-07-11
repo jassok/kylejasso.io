@@ -84,4 +84,30 @@ $(function () {
 		    }
 		});
 	});
+
+	$('.mini').click(function () {
+		if($('.body').is(':visible')) {
+			$('.body').slideUp();
+			$('.input').hide();
+		}
+	});
+
+	$('.full').click(function () {
+		if(!$('.body').is(':visible')) {
+			$('.body').slideDown();
+			$('.input').show();
+		}
+	});
+
+	$('.close').click(function () {	
+		$('.command').slideUp();
+		$('.work').css('box-shadow','none');
+	});
+
+	$('.newCommand').click(function () {
+		if(!$('.command').is(':visible')) {
+			$('.command').slideDown();
+			$('.work').removeAttr('style');
+		}
+	})
 });
