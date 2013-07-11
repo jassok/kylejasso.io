@@ -13,3 +13,5 @@ debug_log.txt
 *.sublime-project
 *.sublime-workspace
 .DS_Store
+
+conn.php

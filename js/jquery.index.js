@@ -70,13 +70,20 @@ $(function () {
 							url: "class.command.php",
 							data: { cmd:command, opt:options, proj:project }
 						}).done(function( msg ) {
-							$('.body').append(msg);
+
+							if(msg == 'clear') {
+								$('.body').html('');
+							} else {
+								$('.body').append(msg);
+
+								$(".body").scrollTop($(".body")[0].scrollHeight);
+							}
 						});
 					} catch (e) {
 						$('.body').append('<p>An error has occoured with command.');
 					}
 
-					$('.body').scrollTop($('.body').height());
+
 
 			        $command.val('');
 
@@ -99,7 +106,7 @@ $(function () {
 		}
 	});
 
-	$('.close').click(function () {	
+	$('.close').click(function () {
 		$('.command').slideUp();
 		$('.work').css('box-shadow','none');
 	});
