@@ -5,4 +5,17 @@ Command, version 0.0.1 -release
 This "terminal" interface can be used for a unique browsing experience of
 my portfolio website. Feel free to scroll down, or use any of the navigation
 links at the top of the page if a terminal-style interface isn't your cup of tea.
-Other wise type `help' to see a full list of the commands available in this environment
+Other wise type `help' to see a full list of the commands available in this environment.
+
+Command: Help
+
+Projects
+	projects <code>
+	projects -source <code>
+	projects -link <code>
+
+Resume
+	resume -skills
+	resume -experience
+	resume -education
+	

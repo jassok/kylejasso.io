@@ -5,90 +5,181 @@ a { color: $whiteBeta; text-decoration: none; }
 
 .centered { max-width: 1400px; margin:0 auto; }
 
-$borderColor: #102A3E;
+.header {
+	background: url(../images/twinkle_twinkle.png) repeat;
+	margin:0;
+	text-align:right;
 
-
-
-.prompt {
-	position:relative;
-	margin:50px auto;
-	padding:5px 7px 7px;
-	border: 1px solid $borderColor;
-	width:70%;
-	font-size:15px;
-
-	@include box-shadow(0 0 1px #ffffff inset);
-	@include background-image(linear-gradient(center top, rgba(50,123,165,0.75) 0%, rgba(46,75,90,0.75) 50%, rgba(92,176,220,0.75)));
-	@include border-radius(5px);
 	@include box-sizing(border-box);
 
-	.header {
-		height:25px;
-		margin-bottom:5px;
+	.nav {
+		margin:0;
+		padding:15px;
 
-		.mini {
-			position:absolute;
-			top:0px;
-			right: 72px;
-			height:15px;
-			width:30px;
-			border: 1px solid $borderColor;
-			border-top:none;
+		li {
+			list-style:none;
+			display: inline-block;
+			margin:0 5px;
 
-			@include border-radius(0 0 0 5px);
+			a {
+				color:$blueAlpha;
+				padding:5px 5px 5px 35px;
+				border-bottom:1px solid $blueAlpha;
 
-		}
-		.full {
-			position:absolute;
-			top:0px;
-			right: 42px;
-			height:16px;
-			width:30px;
-			border-bottom: 1px solid $borderColor;
-
-		}
-		.close {
-			position:absolute;
-			top:0px;
-			right: 10px;
-			height:15px;
-			width:30px;
-			border: 1px solid $borderColor;
-			border-top:none;
-
-			@include border-radius(0 0 5px 0);
-			@include background-image(linear-gradient(top, rgba(169,3,41,0.75) 0%,rgba(143,2,34,0.75) 44%,rgba(109,0,25,0.75) 100%));
-
+				&:hover {
+						color:$whiteAlpha;
+						background-color:$blueAlpha;
+						@include transition-property(background);
+						@include transition-duration(.5s);
+				}
+			}
 		}
 	}
-	.body {
-		position:relative;
-		background: #000;
-		color: #33df33;
-		height:350px;
-		border:1px solid $borderColor;
-		padding:0 5px 25px;
-		overflow-y:scroll;
-	}
+}
 
-	.input {
-		position: absolute;
-		bottom:0;
-		right:1px;
-		width:100%;
-		color: #33df33;
+.introduction {
+	position: relative;
+	text-align:center;
+	background-color:#fff;
+	@include box-shadow(0px 0px 5px 0px rgba(0, 0, 0, .4));
+	z-index:5;
+}
 
-		input {
-			float:left;
-			border:none;
-			padding:5px;
-			width:70%;
-			background-color:#000;
-			color:#33df33;
+.command {
+	position: relative;
+	z-index: 1;
+	background:url(../images/light_wool.png) repeat;
+	.shadow {
+		margin:30px auto;
+		width:70%;
+		@include box-shadow(1px 1px 5px 2px rgba(0, 0, 0, .7));
+		@include border-radius(5px);
+		.prompt {
+			position:relative;
+			padding:5px 7px 7px;
+			border: 1px solid $borderColor;
+			width:100%;
+			font-size:15px;
+
+			@include box-shadow(0 0 1px #ffffff inset);
+			@include background-image(linear-gradient(center top, rgba(50,123,165,0.75) 0%, rgba(46,75,90,0.75) 50%, rgba(92,176,220,0.75)));
+			@include box-sizing(border-box);
+			@include border-radius(5px);
+
+			.heading {
+				height:25px;
+				margin-bottom:5px;
+
+				.mini {
+					position:absolute;
+					top:0px;
+					right: 72px;
+					height:15px;
+					width:30px;
+					border: 1px solid $borderColor;
+					border-top:none;
+					text-align: center;
+
+					@include background-image(linear-gradient(top, rgba(226,226,226,0.6) 0%, rgba(219,219,219,0.6) 50%, rgba(209,209,209,0.6) 51%, rgba(254,254,254,0.6) 100%));
+					@include border-radius(0 0 0 5px);
+
+					img {
+						margin:0 0 5px 0;;
+					}
+				}
+				.full {
+					position:absolute;
+					top:0px;
+					right: 42px;
+					height:16px;
+					width:30px;
+					border-bottom: 1px solid $borderColor;
+					text-align: center;
+
+					@include background-image(linear-gradient(top, rgba(226,226,226,0.6) 0%, rgba(219,219,219,0.6) 50%, rgba(209,209,209,0.6) 51%, rgba(254,254,254,0.6) 100%));
+
+					img {
+						margin:0 0 4px 0;
+					}
+
+				}
+				.close {
+					position:absolute;
+					top:0px;
+					right: 10px;
+					height:15px;
+					width:30px;
+					border: 1px solid $borderColor;
+					border-top:none;
+					text-align: center;
+
+					@include border-radius(0 0 5px 0);
+					@include background-image(linear-gradient(top, rgba(169,3,41,0.75) 0%,rgba(143,2,34,0.75) 44%,rgba(109,0,25,0.75) 100%));
+
+					img {
+						margin:0 0 5px 0;
+					}
+				}
+			}
+			.body {
+				position:relative;
+				background: #000;
+				color: #33df33;
+				height:350px;
+				border:1px solid $borderColor;
+				border-bottom:none;
+				padding:0 5px 25px;
+				overflow-y:scroll;
+			}
+
+			.input {
+				position: relative;
+				color: #33df33;
+				background:#000;
+				border:1px solid $borderColor;
+				border-top:none;
+				border-right:none;
+				margin-top:-30px;
+				margin-right:19px;
+				padding:0 5px 2px;
+
+				input {
+					float:left;
+					border:none;
+					padding:5px;
+					width:70%;
+					background-color:#000;
+					color:#33df33;
+				}
+				.path {
+					float: left;
+					margin:0 3px 3px 0;
+				}
+			}
 		}
-		.path {
-			float: left;
-			margin:0 3px 3px 0;
+	}
+}
+
+.work {
+	position:relative;
+	background-color:#fff;
+	z-index: 5;
+	@include box-shadow(0px -2px 5px 0px rgba(0, 0, 0, .4));
+
+
+	.one-third {
+		padding:25px;
+		.project {
+			background:$lightBeta;
+			.bwWrapper {
+				position:relative;
+				width:70%;
+				margin:0 auto;
+
+				img {
+					height:250px;
+				}
+			}
 		}
 	}
 }
