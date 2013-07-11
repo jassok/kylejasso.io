@@ -30,10 +30,19 @@
 	    return $output;
 	}
 
+	print_r($_POST);
+
 	if($_POST['cmd']) {
 		$command = sanitize($_POST['cmd']);
-		$options = sanitize($_POST['opt']);
-		$project = sanitize($_POST['proj']);
+		
+		if($_POST['opt']) {
+			echo "Try it";
+			$options = sanitize($_POST['opt']);
+		}
+
+		if($_POST['proj']) {
+			$project = sanitize($_POST['proj']);
+		}
 
 		if(strstr($command, 'clear') || $command == 'cls') {
 			echo 'clear';
