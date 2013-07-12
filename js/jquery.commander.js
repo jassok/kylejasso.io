@@ -1,7 +1,7 @@
 (function($){
     "use strict";
 
-    var $input,$control, INPUT, COMMAND, OPTIONS, PATH, VERSION;
+    var $input,$control, INPUT, COMMAND, OPTIONS, PROJECT, ERROR, PATH, VERSION;
 
     VERSION = "1.1";
 
@@ -9,17 +9,17 @@
         // To avoid scope issues, use 'base' instead of 'this'
         // to reference this class from internal events and functions.
         var base = this;
-        
+
         // Access to jQuery and DOM versions of element
         base.$el = $(el);
         base.el = el;
-        
+
         // Add a reverse reference to the DOM object
         base.$el.data("commander", base);
-        
+
         base.init = function(){
             base.options = $.extend({},$.commander.defaultOptions, options);
-            
+
             INPUT = "";
             COMMAND = "";
             OPTIONS = "";
@@ -59,10 +59,10 @@
             currentHours = ( currentHours > 12 ) ? currentHours - 12 : currentHours;
             // Convert an hours component of "0" to "12"
             currentHours = ( currentHours == 0 ) ? 12 : currentHours;
-            
+
             currentMinutes = ( currentMinutes < 10 ? "0" : "" ) + currentMinutes;
             currentSeconds = ( currentSeconds < 10 ? "0" : "" ) + currentSeconds;
-            
+
             var currentTime = currentHours + ':'+currentMinutes+':'+currentSeconds;
 
             $control.find('#c-window').append('<p>Build Started on: '+currentDate+ ' '+ currentTime +'</p>')
@@ -71,81 +71,107 @@
             $control.append('<div id="c-cmdLine" class="clearfix" />');
             $control.find('#c-cmdLine').append('<span id="c-path">' + PATH + '</span>' + '<input type="text" name="command" />');
         };
-        
+
         base.incomingCommand = function(cmd){
             var result = "";
+            var exam = "";
+            ERROR = false;
 
             if(cmd.indexOf(' ') >= 0) {
                 cmd = cmd.toString().split(" ");
 
-                result = base.examine(cmd[0]);
+                result = base.cls(cmd[0]);
 
-                console.log(cmd.length);
+                if(result) {
+                    exam = base.examine(cmd[0]); // Since we know its not clear, is it a - command
 
-                if(cmd.length == 0) {
-                    base.sendAjax(result);
-                } else if (cmd.length == 1) {
-                    base.sendAjax(result,cmd[1]);
-                } else if (cmd.length == 2) {
-                    base.sendAjax(result,cmd[1],cmd[2]);
-                } else {
-                    console.log('something went wrong');
+                    if (cmd.length == 2) {
+                        COMMAND = cmd[0];
+                        if(exam) {
+                            OPTIONS = false;
+                            PROJECT = cmd[1];
+                        }
+
+                    } else if (cmd.length == 3) {
+                        COMMAND = cmd[0];
+                        OPTIONS = cmd[1];
+                        PROJECT = cmd[2];
+
+                        // Command cant be - and have 3 options.
+                        if(exam) {
+                            ERROR = true;
+                        }
+                    }
+                    // Send the command to the ajax
+                    base.sendAjax(COMMAND,OPTIONS,PROJECT,ERROR);
                 }
             } else {
-                result = base.examine(cmd);
+                result = base.cls(cmd);
+
+                if(result) {
+                    COMMAND = cmd;
+                    base.sendAjax(COMMAND,false,false,false);
+                }
             }
 
-            if(result) {
-                base.addCommand(INPUT);
-            }
+            base.addCommand(INPUT);
         };
 
         base.examine = function(check) {
-            COMMAND = "";
-
             if(check.indexOf('-') >= 0) {
-                // Its a command
-                COMMAND = check;
-            } else {
-                if(check.indexOf('help') >= 0) {
-                    COMMAND = check;
-                } else if (check.indexOf('project') >= 0) {
-                    COMMAND = check;
-                } else if (check.indexOf('resume') >= 0) {
-                    COMMAND = check;
-                } else if (check == "clear" || check == "cls") {
-                    base.cls();
-                }
+                return true;
             }
-
-            return COMMAND;
         };
 
-        base.cls = function () {
-            var space = "";
-            for(var i = 0; i < 25; i++) {
-                space = space + "<br />";
-            }
+        base.cls = function (check) {
+            if (check == "clear" || check == "cls") {
+                var space = "";
+                for(var i = 0; i < 25; i++) {
+                    space = space + "<br />";
+                }
 
-            base.$el.find('#c-window').append(space);
-            base.$el.find("#c-window").scrollTop($("#c-window")[0].scrollHeight);
+                base.$el.find('#c-window').append(space);
+                base.$el.find("#c-window").scrollTop($("#c-window")[0].scrollHeight);
+
+                return false;
+            }
+            return true;
         };
 
         base.addCommand = function() {
-            base.$el.find('#c-window').append(PATH + " " + INPUT);
+            base.addLine("<p>" + PATH + " " + INPUT + "</p>");
             $input.val('');
         };
 
-        base.sendAjax = function(cmd,opt,proj) {
-            console.log(cmd);
-            console.log(opt);
-            console.log(proj);
+        base.sendAjax = function(cmd,opt,proj,err) {
+            if(err) {
+                base.addLine("<p>Incorrect parameters set for command `"+cmd+"'.  <br /> Refer to `help "+cmd+"' for more details");
+            }
+
+            try {
+                $.ajax({
+                    type: "POST",
+                    url: "class.command.php",
+                    data: { 'c-command':cmd,'c-options':opt,'c-project':proj }
+                }).done(function( msg ) {
+                    // Returns should be: "Message", "PopUp", "Error"
+                    console.log(msg);
+
+                });
+            } catch (e){
+                base.addLine("<p>An error occurred while sending the data. Please try again</p>");
+            }
         };
-        
+
+        base.addLine = function (html) {
+            base.$el.find('#c-window').append(html);
+            base.$el.find("#c-window").scrollTop($("#c-window")[0].scrollHeight);
+        };
+
         // Run initializer
         base.init();
     };
-    
+
     $.commander.defaultOptions = {
         path: "S:\\",
         windowTitle: "Commander",
@@ -155,7 +181,7 @@
         full: "images/boxes.png",
         close: "images/cross.png"
     };
-    
+
     $.fn.commander = function(options){
         return this.each(function(){
             var cm = new $.commander(this, options);
@@ -192,5 +218,5 @@
             });
         });
     };
-    
+
 })(jQuery);
