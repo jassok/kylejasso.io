@@ -13,7 +13,18 @@
 	<script type="text/javascript" src="js/masonary.min.js"></script>
 	<script type="text/javascript" src="js/BlackAndWhite.js"></script>
 	<script type="text/javascript" src="js/jquery.popup.js"></script>
-	<script type="text/javascript" src="js/jquery.index.js"></script>
+	<!--<script type="text/javascript" src="js/jquery.index.js"></script>-->
+	<script type="text/javascript" src="js/jquery.commander.js"></script>
+
+	<script type="text/javascript">
+		$(function () {
+			$('#commander').commander({
+				path:"S:\\KyleJasso.io\\",
+				windowTitle: "Prospector: Kylejasso.io Command Prompt",
+				website: "KyleJasso.io"
+			});
+		});
+	</script>
 
 </head>
 
@@ -35,30 +46,7 @@
 -->
 <div class="command clearfix">
 	<div class="center">
-		<div class="shadow">
-			<div class="prompt">
-				<div class="heading">
-					<img src="images/prompt.png" /> Prospector: Kylejasso.io Command Prompt
-
-					<div class="mini"><img src="images/underscore.png" /></div>
-					<div class="full"><img src="images/boxes.png" /></div>
-					<div class="close"><img src="images/cross.png" /></div>
-				</div>
-				<div class="body">
-					<p>
-						S:\Kylejasso.io\ <br />
-						Kylejasso.io Resume Engine Version 2.1 <br />
-						Copyright (C) 2013. All rights reserved.
-					</p>
-
-					<p>Build Started on 7/10/2013 2:58:00 PM.</p>
-				</div>
-				<div class="input clearfix">
-						<span class="path">S:\Kylejasso.io></span>
-						<input type="text" name="command" />
-					</div>
-			</div>
-		</div>
+		<div id="commander"></div>
 	</div>
 </div>
 <!--
