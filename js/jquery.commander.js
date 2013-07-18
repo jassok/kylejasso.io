@@ -1,7 +1,7 @@
 (function($){
     "use strict";
 
-    var $input,$control, INPUT, COMMAND, OPTIONS, PROJECT, ERROR, PATH, VERSION;
+    var $input,$control, INPUT, COMMAND, OPTIONS, PROJECT, ERROR, PATH, VERSION, OBJ;
 
     VERSION = "1.1";
 
@@ -130,8 +130,10 @@
                     space = space + "<br />";
                 }
 
+                base.addCommand();
+
                 base.$el.find('#c-window').append(space);
-                base.$el.find("#c-window").scrollTop($("#c-window")[0].scrollHeight);
+                base.$el.find("#c-window").scrollTop($("#c-window")[0].scrollHeight + 50);
 
                 return false;
             }
@@ -154,8 +156,21 @@
                     url: "class.command.php",
                     data: { 'c-command':cmd,'c-options':opt,'c-project':proj }
                 }).done(function( msg ) {
+                    OBJ = jQuery.parseJSON(msg);
+
+                    if(!OBJ.err) {
+                        if(OBJ.popup) {
+                            console.log("We're using a popup");
+                            console.log(msg);
+                            console.log(OBJ.message);
+                        } else {
+                            console.log(msg);
+                            console.log(OBJ.message);
+                        }
+                    } else {
+                        console.log("There was an error");
+                    }
                     // Returns should be: "Message", "PopUp", "Error"
-                    console.log(msg);
 
                 });
             } catch (e){
