@@ -62,6 +62,12 @@ function sanitize($input) {
 				}
 
 				$RESPONSE['message'] = $help;
+			} else if ($command == "project" || $command == "projects") {
+				if($options != 'false' && $project != 'false') {
+					$proj = getProjects($options,$project);
+				} else {
+					$proj = getProjects();
+				}
 			}
 
 		} else {
@@ -97,6 +103,33 @@ function sanitize($input) {
 
 		return $returnMessage;
 
+	}
+
+	function getProjects($specific = false, $code = false) {
+		if($specific && $code) {
+
+		} else if ($specific && !$code) {
+
+		} else {
+			$query = mysql_query("SELECT * FROM projects ORDER BY code ASC") or die(mysql_error());
+			?>
+
+			<div class="clearfix">
+				<div class="c2 colHeader"><b>Code</b></div>
+				<div class="c3 colHeader"><b>Client</b></div>
+				<div class="c11 colHeader"><b>Details</b></div>
+			</div>
+			<?php while($q = mysql_fetch_assoc($query)) : ?>
+				<div class="clearfix">
+					<div class="c2"><?php echo $q['code']; ?></div>
+					<div class="c3"><?php echo $q['client']; ?></div>
+					<div class="c11"><?php echo $q['site_type'].' | '.date('F Y',strtotime($q['date'])); ?></div>
+				</div>
+			<?php endwhile ; ?>
+			<?php
+
+
+		}
 	}
 	echo json_encode($RESPONSE);
 ?>

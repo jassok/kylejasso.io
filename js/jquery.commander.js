@@ -84,14 +84,16 @@
 
                 if(result) {
                     exam = base.examine(cmd[0]); // Since we know its not clear, is it a - command
-
-                    if (cmd.length == 2) {
+                    if (cmd[0] == "help" || cmd[0] == "man") {
+                        COMMAND = cmd[0];
+                        OPTIONS = cmd[1];
+                        PROJECT = false;
+                    } else if (cmd.length == 2) {
                         COMMAND = cmd[0];
                         if(exam) {
                             OPTIONS = false;
                             PROJECT = cmd[1];
                         }
-
                     } else if (cmd.length == 3) {
                         COMMAND = cmd[0];
                         OPTIONS = cmd[1];
@@ -164,8 +166,7 @@
                             console.log(msg);
                             console.log(OBJ.message);
                         } else {
-                            console.log(msg);
-                            console.log(OBJ.message);
+                            base.addLine(OBJ.message);
                         }
                     } else {
                         console.log("There was an error");
@@ -180,6 +181,7 @@
 
         base.addLine = function (html) {
             base.$el.find('#c-window').append(html);
+            base.$el.find('#c-window').append("<br />");
             base.$el.find("#c-window").scrollTop($("#c-window")[0].scrollHeight);
         };
 
