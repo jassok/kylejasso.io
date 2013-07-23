@@ -90,10 +90,8 @@
                         PROJECT = false;
                     } else if (cmd.length == 2) {
                         COMMAND = cmd[0];
-                        if(exam) {
-                            OPTIONS = false;
-                            PROJECT = cmd[1];
-                        }
+                        OPTIONS = false;
+                        PROJECT = cmd[1];
                     } else if (cmd.length == 3) {
                         COMMAND = cmd[0];
                         OPTIONS = cmd[1];

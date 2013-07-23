@@ -43,10 +43,18 @@ function sanitize($input) {
 
 	if($_POST['c-options']) {
 		$options = strtolower(sanitize($_POST['c-options']));
+
+		if($options == 'false') {
+			$options = false;
+		}
 	}
 
 	if($_POST['c-project']) {
 		$project = strtolower(sanitize($_POST['c-project']));
+
+		if($project == 'false') {
+			$project = false;
+		}
 	}
 
 	// Insure that a command was posted
@@ -55,7 +63,7 @@ function sanitize($input) {
 
 		if(in_array($command,$commands)) {
 			if($command == 'help' || $command == 'man') {
-				if($options != 'false') {
+				if($options) {
 					$help = getHelp($options);
 				} else {
 					$help = getHelp();
@@ -63,11 +71,9 @@ function sanitize($input) {
 
 				$RESPONSE['message'] = $help;
 			} else if ($command == "project" || $command == "projects") {
-				if($options != 'false' && $project != 'false') {
-					$proj = getProjects($options,$project);
-				} else {
-					$proj = getProjects();
-				}
+				$proj = getProjects($options,$project);
+
+				$RESPONSE['message'] = $proj;
 			}
 
 		} else {
@@ -106,30 +112,39 @@ function sanitize($input) {
 	}
 
 	function getProjects($specific = false, $code = false) {
-		if($specific && $code) {
+		$return = "";
 
-		} else if ($specific && !$code) {
+		if($specific && $code) {
+			$return .= "<p>$specific about $code</p>";
+
+		} else if (!$specific && $code) {
+			$query = mysql_fetch_assoc(mysql_query("SELECT * FROM projects WHERE code='$code'")) or die("Code $code not found");
+			$return .= "<p>";
+			$return .= "<b>$query[client] [".$query['code']."]</b><br />";
+			$return .= "$query[date] - $query[site_type]";
+			$return .= "</p>";
+			
+			$return .= "<p>$query[block]</p>";
+
+			$return .= $query['description'];
 
 		} else {
 			$query = mysql_query("SELECT * FROM projects ORDER BY code ASC") or die(mysql_error());
-			?>
 
-			<div class="clearfix">
-				<div class="c2 colHeader"><b>Code</b></div>
-				<div class="c3 colHeader"><b>Client</b></div>
-				<div class="c11 colHeader"><b>Details</b></div>
-			</div>
-			<?php while($q = mysql_fetch_assoc($query)) : ?>
-				<div class="clearfix">
-					<div class="c2"><?php echo $q['code']; ?></div>
-					<div class="c3"><?php echo $q['client']; ?></div>
-					<div class="c11"><?php echo $q['site_type'].' | '.date('F Y',strtotime($q['date'])); ?></div>
-				</div>
-			<?php endwhile ; ?>
-			<?php
-
-
+			$return .= "<div class='clearfix'>".
+				"<div class='c2 colHeader'><b>Code</b></div>".
+				"<div class='c3 colHeader'><b>Client</b></div>".
+				"<div class='c11 colHeader'><b>Details</b></div>".
+				"</div>";
+			 while($q = mysql_fetch_assoc($query)) {
+				$return .= "<div class='clearfix'>".
+					"<div class='c2'>".$q['code']."</div>".
+					"<div class='c3'>".$q['client']."</div>".
+					"<div class='c11'>".$q['site_type']." | ".date('F Y',strtotime($q['date']))."</div>".
+					"</div>";
+			}
 		}
+		return $return;
 	}
 	echo json_encode($RESPONSE);
 ?>
