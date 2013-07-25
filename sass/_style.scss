@@ -1,9 +1,18 @@
 /* == Site Wide Styles ========================= */
-html { height: 100%; }
-body { height: 100%; }
-a { color: $whiteBeta; text-decoration: none; }
+html 		{ height: 100%; }
+body 		{ height: 100%; }
+a 			{ color: $whiteBeta; text-decoration: none; }
 
-.centered { max-width: 1400px; margin:0 auto; }
+hr 			{ border: none; background: none; border-bottom: 1px solid $lightBeta; clear:both; }
+
+.center 	{ max-width: 1200px; margin:0 auto; }
+.centerText { text-align:center; }
+
+.floatingHeader {
+  position: fixed;
+  top: 0;
+  visibility: hidden;
+}
 
 
 /* == Header =================================== */
@@ -41,6 +50,7 @@ a { color: $whiteBeta; text-decoration: none; }
 
 /* == Introduction Section ===================== */
 .introduction {
+	display:block;
 	position: relative;
 	text-align:center;
 	background-color:#fff;
@@ -196,18 +206,127 @@ a { color: $whiteBeta; text-decoration: none; }
 		padding:25px;
 		.project {
 			background:$lightBeta;
-			.bwWrapper {
-				position:relative;
-				width:70%;
-				margin:0 auto;
-
-				img {
-					height:250px;
-				}
+			
+			.default {
+				display:block;
+			}
+			.hover {
+				display:none;
 			}
 		}
 	}
 }
+/* == Expanded Work Section ==================== */
+.projectInfo {
+	a {
+		color:$purpleAlpha;
+
+		&:hover {
+			color:$blueBeta;
+		}
+	}
+
+	.images {
+		padding-right:1.5%;
+	}
+	.details {
+		padding-left:1.5%;
+
+		.logo {
+			position:relative;
+			max-width:75px;
+			float:left;
+		}
+
+		h3 {
+			position:relative;
+			float:left;
+			padding:10px;
+			margin:8px -3px;
+		}
+	}
+}
+
+/* == Resume =================================== */
+.resume {
+	padding-top:50px;
+
+	.headshot {
+		width:70%;
+		margin:0 auto 25px auto;
+		border:1px solid #d7d7d7;
+		background:$whiteAlpha;
+		padding:2% 10%;
+
+		img {
+			position:relative;
+			float: left;
+		}
+
+		.overview {
+			position: relative;
+			display:inline;
+			float:left;
+			padding-left:3%;
+			color: $darkAlpha;
+
+			a {
+				color:$darkAlpha;
+				&:hover {
+					color: $blueBeta;
+				}
+			}
+
+
+			h4 {
+				padding-left:0;
+			}
+		}
+	}
+
+	.skillTree {
+		padding-left:1.5%;
+		h3 {
+			padding-left:0;
+			font-weight:500;
+			padding-bottom:2px;
+			color:$darkAlpha;
+			border-bottom:2px solid $darkAlpha;
+			margin-bottom:15px;
+		}
+		.skills { 
+			max-width: 150px;
+
+			.skill {
+				margin:0 2.5px;
+				height:15px;
+				width:15px;
+				border:1px solid $darkAlpha;
+				float:left;
+
+				@include border-radius(50%);
+
+				&.fill {
+					background:$darkAlpha;
+				}
+			}
+		}
+	}
+	.aboutTree {
+		padding-right:1.5%;
+
+		h3 {
+			font-weight:600;
+			padding-left:0;
+			padding-bottom:2px;
+			color:$darkAlpha;
+			border-bottom:2px solid $darkAlpha;
+			margin-bottom:15px;
+		}
+	}
+
+}
+
 
 /* == Texteditor Pupup ========================= */
 
@@ -375,20 +494,3 @@ a { color: $whiteBeta; text-decoration: none; }
 }
 
 
-/*
-tabs {
-		background-color:#171714;
-		border-bottom:1px solid #3c3d39;
-
-		.tab {
-			// 4d4d4b TO 343431
-
-			@include background-image(linear-gradient(top,#4d4d4b,#343431));
-			&.active {
-				//363732 TO 272822
-
-				@include background-image(linear-graident(top,#363732,#272822));
-			}
-		}
-	}
-	*/

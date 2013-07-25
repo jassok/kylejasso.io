@@ -1,5 +1,6 @@
 <?php
 @include 'conn.php';
+@include 'lib/functions.php';
 
 $command = "";
 $options = "";
@@ -8,33 +9,6 @@ $RESPONSE = "";
 
 $commands = array('help','man','projects','project','resume','-source','-s','-link','-l');
 
-function cleanInput($input) {
-	$search = array(
-		'@<script[^>]*?>.*?</script>@si',   // Strip out javascript
-		'@<[\/\!]*?[^<>]*?>@si',            // Strip out HTML tags
-		'@<style[^>]*?>.*?</style>@siU',    // Strip style tags properly
-		'@<![\s\S]*?--[ \t\n\r]*>@'         // Strip multi-line comments
-	);
-
-	$output = preg_replace($search, '', $input);
-	return $output;
-}
-
-function sanitize($input) {
-    if (is_array($input)) {
-        foreach($input as $var=>$val) {
-            $output[$var] = sanitize($val);
-        }
-    }
-    else {
-        if (get_magic_quotes_gpc()) {
-            $input = stripslashes($input);
-        }
-        $input  = cleanInput($input);
-        $output = mysql_real_escape_string($input);
-    }
-    return $output;
-}
 
 	// Sanitize any incoming commands because we're about to database
 	if($_POST['c-command']) {
@@ -74,6 +48,8 @@ function sanitize($input) {
 				$proj = getProjects($options,$project);
 
 				if(strstr($proj,'-s')) {
+					$RESPONSE['popup'] = 1;
+				} else if(strstr($proj,'-l')) {
 					$RESPONSE['popup'] = 1;
 				}
 				$RESPONSE['message'] = $proj;
@@ -128,7 +104,7 @@ function sanitize($input) {
 			if($specific == "-source" || $specific == "-s") {
 				$return = "-s ".$code;
 			} else if ($specific == "-link" || $specific == "-l") {
-				$return = "-l client/$code";
+				$return = "-l $code";
 			}
 
 		} else if (!$specific && $code) {
@@ -165,12 +141,10 @@ function sanitize($input) {
 		$return = '';
 
 		if($opt){
-			$opt = str_replace('-',$opt);
-			die($opt);
+			$opt = str_replace('-','',$opt);
 			$query = mysql_fetch_assoc(mysql_query("SELECT * FROM resume WHERE section='$opt'"));
 
-			$return = $query['text'].$opt.$project;
-
+			$return = $query['text'];
 		} else {
 			$return = "what do i return for general";
 		}

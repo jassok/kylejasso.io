@@ -162,6 +162,7 @@
                     if(!OBJ.err) {
                         if(OBJ.popup) {
                             OBJ.message = OBJ.message.split(' ');
+                            console.log(OBJ.message[0]);
                             if(OBJ.message[0] == '-s') {
                                 $.ajax({
                                     type:"POST",
@@ -170,6 +171,9 @@
                                 }).done(function ( msg) {
                                     $('.popUp').popUp(msg);
                                 });
+                            } else if (OBJ.message[0] == '-l') {
+                                console.log(OBJ.message[1]);
+                                document.location.href = "project/"+OBJ.message[1];
                             }
                         } else {
                             base.addLine(OBJ.message);

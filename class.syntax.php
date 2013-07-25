@@ -12,6 +12,8 @@ $query = mysql_fetch_assoc(mysql_query("SELECT * FROM highlighted_source WHERE c
 <link rel="stylesheet" type="text/css" href="highlighter/sons-of-obsidian.css" />
 <script type="text/javascript">
 	$(function () {
+		$('.prettyprint').css('max-height',(($(window).height())-200)+'px');
+
 		$('a[href="#closePopUp"]').click(function () {
 			$('.popUp').fadeOut(function () {
 	            $(".browserDimmer").fadeOut(function () {
@@ -19,6 +21,7 @@ $query = mysql_fetch_assoc(mysql_query("SELECT * FROM highlighted_source WHERE c
 	                $('.popUp').removeAttr('style');
 	            });
 	        });
+	        return false;
 		});
 		var defaultStyles;
 		$('.full').click(function () {
@@ -29,13 +32,14 @@ $query = mysql_fetch_assoc(mysql_query("SELECT * FROM highlighted_source WHERE c
 			if($(this).hasClass('shrink')) {
 				console.log(defaultStyles);
 				$('.popUp').attr('style',defaultStyles);
-				$('.prettyprint').css('max-height',(600)+'px');
+				$('.prettyprint').css('max-height',(maxHeight-200)+'px');
 			} else {
 				defaultStyles = $('.popUp').attr('style');
-				$('.popUp').css({'height':maxHeight+'px','width':(maxWidth-20)+'px','left':0,'margin-left':0,'margin-top':0});
+				$('.popUp').css({'height':maxHeight+'px','width':(maxWidth-20)+'px','top':0,'left':0,'margin-left':0,'margin-top':0});
 				$('.prettyprint').css('max-height',(maxHeight-100)+'px');
 			}
 			$(this).toggleClass('shrink');
+			return false;
 		});
 
 		$('.mini').click(function () {
