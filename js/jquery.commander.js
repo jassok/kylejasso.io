@@ -113,8 +113,9 @@
                     base.sendAjax(COMMAND,false,false,false);
                 }
             }
-
-            base.addCommand(INPUT);
+            if(result) {
+                base.addCommand(INPUT);
+            }
         };
 
         base.examine = function(check) {
@@ -160,14 +161,21 @@
 
                     if(!OBJ.err) {
                         if(OBJ.popup) {
-                            console.log("We're using a popup");
-                            console.log(msg);
-                            console.log(OBJ.message);
+                            OBJ.message = OBJ.message.split(' ');
+                            if(OBJ.message[0] == '-s') {
+                                $.ajax({
+                                    type:"POST",
+                                    url:"class.syntax.php",
+                                    data:{'proj':OBJ.message[1] }
+                                }).done(function ( msg) {
+                                    $('.popUp').popUp(msg);
+                                });
+                            }
                         } else {
                             base.addLine(OBJ.message);
                         }
                     } else {
-                        console.log("There was an error");
+                        base.addLine(OBJ.message);
                     }
                     // Returns should be: "Message", "PopUp", "Error"
 
@@ -228,7 +236,7 @@
             });
 
             $('#c-close').click(function () {
-                cm.$el.slideUp();
+                cm.$el.fadeOut();
                 $('.work').css('box-shadow','none');
             });
         });

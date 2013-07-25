@@ -20,7 +20,7 @@ $.fn.popUp = function (data, noDim, callback) {
         });
     } else { //---- use browserDimmer
         $(".browserDimmer").fadeIn(function () {
-            $thisPopUp.html("<p class='close'><a href='#closePopUp'>X</a></p>" + data);
+            $thisPopUp.html(data);
             thisWidth = $thisPopUp.outerWidth();
 
             scrollVal = $(window).scrollTop();

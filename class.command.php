@@ -6,7 +6,7 @@ $options = "";
 $project = "";
 $RESPONSE = "";
 
-$commands = array('help','man','projects','resume','-source','-s','-link','-l');
+$commands = array('help','man','projects','project','resume','-source','-s','-link','-l');
 
 function cleanInput($input) {
 	$search = array(
@@ -73,7 +73,17 @@ function sanitize($input) {
 			} else if ($command == "project" || $command == "projects") {
 				$proj = getProjects($options,$project);
 
+				if(strstr($proj,'-s')) {
+					$RESPONSE['popup'] = 1;
+				}
 				$RESPONSE['message'] = $proj;
+			} else if ($command == "-source" || $command == "-s") {
+				$RESPONSE['popup'] = 1;
+				$RESPONSE['message'] = "-s $project";
+			} else if ($command == "resume") {
+				$resume = getResume($project);
+
+				$RESPONSE['message'] = $resume;
 			}
 
 		} else {
@@ -115,7 +125,11 @@ function sanitize($input) {
 		$return = "";
 
 		if($specific && $code) {
-			$return .= "<p>$specific about $code</p>";
+			if($specific == "-source" || $specific == "-s") {
+				$return = "-s ".$code;
+			} else if ($specific == "-link" || $specific == "-l") {
+				$return = "-l client/$code";
+			}
 
 		} else if (!$specific && $code) {
 			$query = mysql_fetch_assoc(mysql_query("SELECT * FROM projects WHERE code='$code'")) or die("Code $code not found");
@@ -123,7 +137,7 @@ function sanitize($input) {
 			$return .= "<b>$query[client] [".$query['code']."]</b><br />";
 			$return .= "$query[date] - $query[site_type]";
 			$return .= "</p>";
-			
+
 			$return .= "<p>$query[block]</p>";
 
 			$return .= $query['description'];
@@ -144,6 +158,23 @@ function sanitize($input) {
 					"</div>";
 			}
 		}
+		return $return;
+	}
+
+	function getResume($opt = false) {
+		$return = '';
+
+		if($opt){
+			$opt = str_replace('-',$opt);
+			die($opt);
+			$query = mysql_fetch_assoc(mysql_query("SELECT * FROM resume WHERE section='$opt'"));
+
+			$return = $query['text'].$opt.$project;
+
+		} else {
+			$return = "what do i return for general";
+		}
+
 		return $return;
 	}
 	echo json_encode($RESPONSE);

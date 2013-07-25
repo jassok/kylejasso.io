@@ -212,11 +212,10 @@ a { color: $whiteBeta; text-decoration: none; }
 /* == Texteditor Pupup ========================= */
 
 .textEditor {
-	margin:50px auto;
 	position:relative;
 	padding:5px 7px 7px;
 	border: 1px solid $borderColor;
-	width:90%;
+	width:100%;
 	font-size:15px;
 
 	@include box-shadow(0 0 1px #ffffff inset);

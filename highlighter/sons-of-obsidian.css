@@ -16,7 +16,11 @@
 .atn { color: #E0E2E4; }
 .atv { color: #EC7600; }
 .dec { color: purple; }
-pre.prettyprint { border: 0px solid #888; }
+pre.prettyprint {
+	border: 0px solid #888;
+	overflow-y:scroll;
+	max-height:600px;
+}
 ol.linenums {
     margin-top: 0;
     margin-bottom: 0;
@@ -31,6 +35,7 @@ li.L6, li.L7,
 li.L8, li.L9 {
     color: #555;
     list-style-type: decimal;
+    white-space:pre-wrap;
 }
 li.L1, li.L3,
 li.L5, li.L7,
