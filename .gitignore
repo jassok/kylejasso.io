@@ -15,3 +15,8 @@ debug_log.txt
 .DS_Store
 
 conn.php
+
+images/clients/
+images/clientLogos/
+
+admin/
