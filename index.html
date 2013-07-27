@@ -12,76 +12,79 @@
 
 	<script type="text/javascript" src="js/masonary.min.js"></script>
 	<script type="text/javascript" src="js/BlackAndWhite.js"></script>
+	<script type="text/javascript" src="js/jquery.popup.js"></script>
+	<!--<script type="text/javascript" src="js/jquery.index.js"></script>-->
+	<script type="text/javascript" src="js/jquery.commander.js"></script>
 
 	<script type="text/javascript">
 		$(function () {
-			$(window).on("ready load resize", pushFooter);
+			$('#commander').commander({
+				path:"S:\\KyleJasso.io\\",
+				windowTitle: "Prospector: Kylejasso.io Command Prompt",
+				website: "KyleJasso.io"
+			});
+
+			$('a[href="#closePopUp"]').on('click',function (e) {
+				console.log(e);
+				return false;
+			});
 		});
-
-		function pushFooter() {
-			$(".footerSpacer").height(0); //- remove .footerSpacer height for acurate calculations
-			var browserHeight = $(window).height();
-			var contentHeight = $("body").height();
-			if (browserHeight > contentHeight) {
-			var footerSpacerHeight = browserHeight-contentHeight;
-			if (!$(".footerSpacer").length) { $(".footer").before("<div class='footerSpacer' />"); }
-				$(".footerSpacer").height(footerSpacerHeight);
-			}
-		}
 	</script>
-
 
 </head>
 
 <body>
-	<header class="header clearfix">
-		<h1 class="logo">KyleJasso.io</h1>
+	<div class="browserDimmer"></div> <!-- popup bg -->
+	<div class="popUp"></div> <!-- standard popup -->
+	<!--
+<div class="header">
+	<ul class="nav">
+		<li><a href="#">About</a></li>
+		<li><a href="#">Work</a></li>
+		<li><a href="#">Contact</a></li>
+	</ul>
+</div>
 
-		<ul class="menu">
-			<li><a href="#">Work</a></li>
-			<li><a href="#">About</a></li>
-			<li><a href="#">Contact</a></li>
-		</ul>
-	</header>
+<div class="introduction">
+	<h1 class="newCommand">KyleJasso.io</h1>
+</div>
+-->
+<div class="command clearfix">
+	<div class="center">
+		<div id="commander"></div>
+	</div>
+</div>
+<!--
+<div class="work clearfix">
+	<div class="center">
+		<h2>Work</h2>
 
-
-	<div class="centered clearfix">
-		<div class="pageIndex clearfix">
-			<div class="modules clearfix">
-				<div class="one-third module">
-					<div class="serverSide clearfix">
-						<div class="icon"> </div>
-						<div class="description">
-							<h2>Server Side Scripting</h2>
-							<?php //-- TODO: Database ?>
-							<p>Having a well thoughtout, logical back-end to any website is a must. From a powerful administration, to a logical database, having a good server side application not only makes the project easier to expand and grow; it also makes it more versatile for the client.</p>
-						</div>
-					</div>
-				</div>
-
-				<div class="one-third module">
-					<div class="responsive clearfix">
-						<div class="icon"> </div>
-						<div class="description">
-							<h2>Responsive Web Development</h2>
-							<?php //-- TODO: Database ?>
-							<p>The future is always unknown. Not even the best experts in the world could have predicted the smart phone to be as versital as it is. With Responsive Web Design, it doesn't matter if the future device is the size of an eye glass, or as large as a wall.</p>
-						</div>
-					</div>
-				</div>
-
-				<div class="one-third module">
-					<div class="frontEnd clearfix">
-						<div class="icon"> </div>
-						<div class="description">
-							<h2>Front-End Development</h2>
-							<?php //-- TODO: Database ?>
-							<p>A beautiful design is nothing if it can't be translated well. Those photoshop documents should look just as good on the web as they do in rough form. Interactivity should feel seamless and natural. These things make viewing a website an experience worth repeating.</p>
-						</div>
-					</div>
+		<div class="clearfix">
+			<div class="one-third">
+				<div class="project">
+					<div class="bwWrapper"><img src="images/ms-large-CC.png" alt="Cheng Crowns" /></div>
 				</div>
 			</div>
 
+			<div class="one-third">
+				<div class="project">
+					<div class="bwWrapper"><img src="images/ms-tall-SPOT.png" alt="Comcast Spotlight" /></div>
+				</div>
+			</div>
+
+			<div class="one-third">
+				<div class="project">
+					<div class="bwWrapper"><img src="images/ms-large-MATH.png" alt="Monster Math Club" /></div>
+				</div>
+			</div>
+
+			<div class="one-third">
+				<div class="project">
+					<div class="bwWrapper"><img src="images/ms-wide-PIF.png" alt="Comcast Philly in Focus" /></div>
+				</div>
+			</div>
+
+<<<<<<< HEAD
 			<script type="text/javascript">
 				$(function () {
 					$('#container').masonry({
@@ -135,18 +138,36 @@
 					<div class="ms ms-wide">
 						<div class="bwWrapper"><img src="images/ms-wide-CDC.png" alt="Swoop Cards" /></div>
 					</div>
+=======
+			<div class="one-third">
+				<div class="project">
+					<div class="bwWrapper"><img src="images/ms-small-ALSF.png" alt="Alexs Lemonade Stand" /></div>
 				</div>
 			</div>
+
+			<div class="one-third">
+				<div class="project">
+					<div class="bwWrapper"><img src="images/ms-wide-RSO.png" alt="Reality Sports Online" /></div>
+				</div>
+			</div>
+
+			<div class="one-third">
+				<div class="project">
+					<div class="bwWrapper"><img src="images/ms-small-USV.png" alt="Upstage Video" /></div>
+				</div>
+			</div>
+
+			<div class="one-third">
+				<div class="project">
+					<div class="bwWrapper"><img src="images/ms-wide-CDC.png" alt="Swoop Cards" /></div>
+>>>>>>> trminal2
+				</div>
+			</div>
+
 		</div>
 	</div>
-
-	<footer class="footer clearfix">
-		<div class="centered clearfix">
-			<div class="one-third">&nbsp;</div>
-			<div class="one-third">&nbsp;</div>
-			<div class="one-third" style="text-align:right;">KyleJasso.io</div>
-		</div>
-	</footer>
+</div>
+-->
 </body>
 </html>
 

@@ -6,26 +6,49 @@
 
 /* == Typography =============================== */
 @import url(http://fonts.googleapis.com/css?family=Pathway+Gothic+One);
+@import url(http://fonts.googleapis.com/css?family=Muli:400,300);
+@import url(http://fonts.googleapis.com/css?family=Noto+Sans:700);
 
 $weight           : normal;
 $line-height      : 1.65;
-$font-size        : 112.5; // (16 * 112.5% = 18px)
+$kerning		  : .05;
+$font-size        : 100; // (16 * 112.5% = 18px)
 $font-base        : 16 * ($font-size / 100);
 $font-family      : serif;
-$font-family-sans : 'Pathway Gothic One';
+$font-family-sans : 'Muli';
 
 /* == Main Styles ============================== */
-body { font-family: $font-family-sans; line-height: $line-height; font-size:($font-base+px); }
+body { font-family: $font-family-sans; line-height: $line-height; font-size:($font-base+px); letter-spacing:$kerning+em; }
 
 /* == Headings ================================= */
 
-h1, h2, h3, h4, h5, h6 { margin:0; padding: 25px 15px; letter-spacing: .05em; font-weight:100; }
+h1, h2, h3, h4, h5, h6 { margin:0; padding: 10px 15px; letter-spacing: .05em; font-weight:100; }
 
-h1 { font-size: 42px; color: $greenBeta; font-variant:small-caps; }
+h1 { 
+	font-size: 42px; 
+	color: $greenBeta; 
+	font-variant:small-caps; 
 
-h2 { font-size: 28px; }
+	&.subHeading {
+		float: left;
+		font-size:22px;
+	}
+}
 
-h3 { font-size: 22px; }
+h2 { font-size: 28px;
+	&.subHeading {
+		font-size:42px;
+		color: $purpleAlpha; 
+		font-variant:small-caps; 
+	}
+}
+
+h3 { font-size: 22px; 
+	&.subHeading {
+		padding-top:0;
+		margin-top:-15px;
+	}
+}
 
 h4 { font-size: 18px; }
 
