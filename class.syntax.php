@@ -5,7 +5,7 @@ $project = $_POST['proj'];
 
 //$project = 'cdc';
 
-$query = mysql_fetch_assoc(mysql_query("SELECT * FROM highlighted_source WHERE code='$project'"));
+$query = mysql_query("SELECT * FROM highlighted_source WHERE code='$project'");
 
 ?>
 <script type="text/javascript" src="highlighter/run_prettify.js"></script>
@@ -50,6 +50,25 @@ $query = mysql_fetch_assoc(mysql_query("SELECT * FROM highlighted_source WHERE c
 			$('.popUp').css({'width':200,'bottom':0,'left':0,'margin-left':0,'display':block});
 			*/
 		});
+
+		$('.tabrow').find('li:first').addClass('selected')
+		$('.code').find('.prettyprint:first').show();
+		$('.tabrow li').click(function () {
+			var change = $(this).data('id');
+			console.log(change);
+			$('.tabrow li').each(function () {
+				$(this).removeClass('selected');
+			});
+			$(this).addClass('selected');
+
+			$('.prettyprint').each(function () {
+				if($(this).is(':visible')) {
+					$(this).fadeOut(function () {
+						$('#'+change).fadeIn();
+					});
+				}
+			})
+		})
 	});
 </script>
 
@@ -62,16 +81,18 @@ $query = mysql_fetch_assoc(mysql_query("SELECT * FROM highlighted_source WHERE c
 	</div>
 
 	<ul class="tabrow">
-		<li class="selected">index.php</li>
-		<li>style.css</li>
+		<?php while($lq = mysql_fetch_assoc($query)) : ?>
+			<li data-id="<?php echo $lq['source_ID']; ?>"><?php echo $lq['filename']; ?></li>
+		<?php endwhile ; ?>
 	</ul>
 
 	<div class="code">
-
-		<pre class="prettyprint linenums">
-		<?php echo str_replace("  "," ",htmlspecialchars($query['syntax'],ENT_QUOTES)); ?>
-		</pre>
-
+		<?php $query = mysql_query("SELECT * FROM highlighted_source WHERE code='$project'"); ?>
+		<?php while($cq = mysql_fetch_assoc($query)) : ?>
+			<pre class="prettyprint linenums" id="<?php echo $cq['source_ID']; ?>">
+<?php echo str_replace("  "," ",htmlspecialchars($cq['syntax'],ENT_QUOTES)); ?>
+			</pre>
+		<?php endwhile ; ?>
 	</div>
 
 

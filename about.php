@@ -1,32 +1,6 @@
 <?php $sub = true; ?>
 <?php include 'header.php'; ?>
 
-<?php
-	function returnBubbles($skill) {
-		$return = "";
-
-		$return .='<div class="skills">';
-		for($i = 0; $i < $skill; $i++) {
-			$return .= '<div class="skill fill">&nbsp;</div>';
-		}
-		if($skill < 5) {
-			for($i = $skill; $i < 5; $i++) {
-				$return .= '<div class="skill">&nbsp;</div>';
-			}
-		}
-		$return .= '</div>';
-
-		return $return;
-	}
-
-?>
-
-<script type="text/javascript">
-	$(function () {
-
-	});
-</script>
-
 <div class="introduction">
 	<h2 class="subHeading">Kyle Jasso</h2>
 	<h3 class="subHeading">Web Designer and Developer</h3>

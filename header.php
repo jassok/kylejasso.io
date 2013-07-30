@@ -24,16 +24,18 @@
 				website: "KyleJasso.io"
 			});
 
-			$('.project').mouseenter(function () {
-				$this = $(this);
-				$this.find('.default').fadeOut(function () {
-					$this.find('.hover').fadeIn();
-				});
-			}).mouseleave(function() {
-				$this.find('.hover').fadeOut(function () {
-					$this.find('.default').fadeIn();
-				});
-			});
+			$('.work .project').hover(
+				function () {
+					$(this).find('.hover').animate({
+						bottom: '0'
+					},600);
+				},
+				function () {
+					$(this).find('.hover').animate({
+						bottom: '-500'
+					},600);
+				}
+			);
 		});
 	</script>
 
@@ -45,11 +47,11 @@
 
 <div class="header">
 	<?php if($sub) :?>
-		<h1 class="subHeading">KyleJasso.io</h1>
+		<h1 class="subHeading"><a href="">KyleJasso.io</a></h1>
 	<?php endif ; ?>
 	<ul class="nav">
 		<li><a href="about">About</a></li>
 		<li><a href="#Work">Work</a></li>
-		<li><a href="#">Contact</a></li>
+		<li><a href="contact">Contact</a></li>
 	</ul>
 </div>

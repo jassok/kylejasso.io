@@ -32,10 +32,17 @@ h1 {
 	&.subHeading {
 		float: left;
 		font-size:22px;
+		color:$blueAlpha;
+		a {
+			color:$blueAlpha;
+		}
 	}
 }
 
-h2 { font-size: 28px;
+h2 {
+	font-size: 28px;
+	color:$darkBeta;
+	font-weight:600;
 	&.subHeading {
 		font-size:42px;
 		color: $purpleAlpha; 

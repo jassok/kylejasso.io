@@ -37,7 +37,7 @@
 	});
 </script>
 
-<div class="introduction projectInfo">
+<div class="introduction">
 	<h2 class="subHeading"><?php echo $query['client']; ?></h2>
 </div>
 <div class="command clearfix">
