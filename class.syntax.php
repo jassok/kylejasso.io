@@ -1,7 +1,8 @@
 <?php
 @include 'conn.php';
+@include 'lib/functions.php';
 
-$project = $_POST['proj'];
+$project = sanitize($_POST['proj']);
 
 //$project = 'cdc';
 
@@ -25,12 +26,12 @@ $query = mysql_query("SELECT * FROM highlighted_source WHERE code='$project'");
 		});
 		var defaultStyles;
 		$('.full').click(function () {
+			$(window).scrollTop();
 
 			var maxWidth = $(window).width();
 			var maxHeight = $(window).height();
 
 			if($(this).hasClass('shrink')) {
-				console.log(defaultStyles);
 				$('.popUp').attr('style',defaultStyles);
 				$('.prettyprint').css('max-height',(maxHeight-200)+'px');
 			} else {

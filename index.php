@@ -5,19 +5,18 @@
 	<h1 class="newCommand">KyleJasso.io</h1>
 </div>
 
-<div class="command clearfix">
+<div class="command clearfix noMobile">
 	<div class="center">
 		<div id="commander"></div>
 	</div>
 </div>
 
-<a id="work">
-<div class="work clearfix">
+<div class="work clearfix" id="work_section">
 	<div class="center">
 		<h2>Work</h2>
 
 		<div class="clearfix">
-			<?php $query = mysql_query("SELECT code, src, client,site_type FROM projects WHERE active=1 ORDER BY date ASC"); ?>
+			<?php $query = mysql_query("SELECT code, src, client,site_type FROM projects WHERE active=1 ORDER BY date DESC"); ?>
 			<?php while($mq = mysql_fetch_assoc($query)) :?>
 				<div class="one-third">
 					<a href="project/<?php echo $mq['code']; ?>">
@@ -37,6 +36,4 @@
 	</div>
 </div>
 
-</body>
-</html>
-
+<?php include "footer.php"; ?>

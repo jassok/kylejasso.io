@@ -33,6 +33,7 @@
 					<li>Developed and tested Leverage CMS.</li>
 					<li>Implemented Server-Side scripts and database structure for client websites.</li>
 					<li>Cross browser and platform testing.</li>
+					<li>Updated production workflow to include Version Control and CSS Preprocessing.</li>
 				</ul>
 
 			</div>
@@ -193,8 +194,7 @@
 			</div>
 		</div>
 	</div>
-
+	<p><i class="icon-download"></i> Download Resume: <a href="KyleJasso_Resume.doc">.doc</a> | <a target="_BLANK" href="KyleJasso_Resume.pdf">.pdf</a>
 </div>
-
 
 <?php include 'footer.php'; ?>
