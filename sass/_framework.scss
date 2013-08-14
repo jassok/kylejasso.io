@@ -72,8 +72,6 @@ img {
 	width:90%;
 
     @include box-shadow(0 0 10px #ccc);
-
-
 }
 
  .browserDimmer {
@@ -85,19 +83,4 @@ img {
     left:0;
     z-index:98;
     display:none;
-}
-
-
-@media only screen and (min-width: 960px) {
-	.noDesktop 	{ display: none; }
-}
-
-@media only screen and (min-width: 768px) and (max-width: 991px) {
-	.noTablet 	{ display: none; }
-}
-
-@media only screen and (max-width: 767px) {
-	.half,.one-third,.two-thirds,.c1,.c2,.c3,
-	.c4,.c5,.c6,.c7,.c8,.c9,.c10,.c11,.c12,.c13,
-	.c14,.c15,.c16 { @include col(16); }
 }

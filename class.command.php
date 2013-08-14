@@ -146,7 +146,8 @@ $commands = array('help','man','projects','project','resume','-source','-s','-li
 
 			$return = $query['text'];
 		} else {
-			$return = "what do i return for general";
+			$query = mysql_fetch_assoc(mysql_query("SELECT * FROM resume WHERE section='objective'"));
+			$return = $query['text'];
 		}
 
 		return $return;

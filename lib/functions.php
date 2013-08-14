@@ -26,5 +26,21 @@ function sanitize($input) {
     }
     return $output;
 }
+function returnBubbles($skill) {
+    $return = "";
+
+    $return .='<div class="skills">';
+    for($i = 0; $i < $skill; $i++) {
+        $return .= '<div class="skill fill">&nbsp;</div>';
+    }
+    if($skill < 5) {
+        for($i = $skill; $i < 5; $i++) {
+            $return .= '<div class="skill" title="Theres always room for improvement.">&nbsp;</div>';
+        }
+    }
+    $return .= '</div>';
+
+    return $return;
+}
 
 ?>

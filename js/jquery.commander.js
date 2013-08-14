@@ -214,10 +214,6 @@
             var cm = new $.commander(this, options);
             $input = cm.$el.find('input[name="command"]');
 
-            $(window).load(function () {
-                $input.focus();
-            });
-
             $input.keypress(function(e) {
                 if(e.which == 13) {
                     INPUT = $input.val();

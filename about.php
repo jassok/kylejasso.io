@@ -1,32 +1,6 @@
 <?php $sub = true; ?>
 <?php include 'header.php'; ?>
 
-<?php
-	function returnBubbles($skill) {
-		$return = "";
-
-		$return .='<div class="skills">';
-		for($i = 0; $i < $skill; $i++) {
-			$return .= '<div class="skill fill">&nbsp;</div>';
-		}
-		if($skill < 5) {
-			for($i = $skill; $i < 5; $i++) {
-				$return .= '<div class="skill">&nbsp;</div>';
-			}
-		}
-		$return .= '</div>';
-
-		return $return;
-	}
-
-?>
-
-<script type="text/javascript">
-	$(function () {
-
-	});
-</script>
-
 <div class="introduction">
 	<h2 class="subHeading">Kyle Jasso</h2>
 	<h3 class="subHeading">Web Designer and Developer</h3>
@@ -59,6 +33,7 @@
 					<li>Developed and tested Leverage CMS.</li>
 					<li>Implemented Server-Side scripts and database structure for client websites.</li>
 					<li>Cross browser and platform testing.</li>
+					<li>Updated production workflow to include Version Control and CSS Preprocessing.</li>
 				</ul>
 
 			</div>
@@ -219,8 +194,7 @@
 			</div>
 		</div>
 	</div>
-
+	<p><i class="icon-download"></i> Download Resume: <a href="KyleJasso_Resume.doc">.doc</a> | <a target="_BLANK" href="KyleJasso_Resume.pdf">.pdf</a>
 </div>
-
 
 <?php include 'footer.php'; ?>

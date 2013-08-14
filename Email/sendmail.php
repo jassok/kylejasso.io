@@ -1,0 +1,198 @@
+<?php
+/* == Email Styles =========================== */
+$table = 'font-size: 18px; font-family:"Arial Black", Gadget, sans-serif; font-variant: small-caps; text-transform: lowercase; font-weight: 100; table-layout: fixed;';
+$tabletrtd ='margin:0; padding:0; border:none; border-spacing:0; border-collapse:collapse; position: relative; vertical-align: top;';
+$img = 'max-width:100%; border:none; display:block';
+$p = 'line-height10px; padding: 0 10px; color:#fbfbfb;';
+$a = 'color:#fbfbfb; text-decoration:none;';
+$note = 'line-height:20px; width:500px; margin:50px; color:purple';
+$centerSpace = 'width:533px; height:266px;';
+$button ='background:#553679; color:#fbfbfb; padding:8px 15px; float:right; text-decoration:none;';
+$clearfix = 'clear:both;';
+$darkBlue = 'background:#586479;';
+$desk = 'background:gray';
+$mail = 'margin:0 auto; width:601px; background:#fbfbfb; line-height: 0;';
+$heading ='line-height:20px;';
+$orange = 'color:orange;';
+$topspacer = 'height:49px;';
+$vertSpacer = 'width:33px; height:266px;';
+
+
+$emailnote = $_POST['message'];
+
+
+$message = "";
+
+$message .= '<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">';
+$message .= '<html>';
+$message .= '<head>';
+$message .= '	<meta name="viewport" content="width=device-width, initial scale=1.0"/>';
+$message .= '	<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">';
+$message .= '</head>';
+$message .= '<body>';
+
+$message .= "<table style='$table $tabletrtd $mail'>";
+$message .= "	<!-- Header -->";
+$message .= "	<tr style='$tabletrtd $darkBlue $heading'>";
+$message .= "		<td style='$tabletrtd'><p style='$p $orange'>Kyle Jasso</p></td>";
+$message .= "		<td style='$tabletrtd'><p style='$p'><a style='$a' href='http://www.kylejasso.io/Email/email.php'>View Online</a></p></td>";
+$message .= "		<td style='$tabletrtd'><p style='$p'><a style='$a' href='http://www.kylejasso.io'>Website</a></p></td>";
+$message .= "		<td style='$tabletrtd width:250px; text-align:right;'><p style='$p'>Phone: <span style='$orange'>503 269 6789</span></p></td>";
+$message .= "	</tr>";
+$message .= "	<!-- Spacer -->";
+$message .= "	<tr style='$tabletrtd $darkBlue $topspacer' height='49'>";
+$message .= "		<td style='$tabletrtd' height='49' colspan='4'><a style='$a' href='http://www.kylejasso.io/Email/email.php'><img style='$img' src='http://www.kylejasso.io/Email/images/email_04.png' alt='No images? Try viewing it in the browser!' /></a></td>";
+$message .= "	</tr>";
+$message .= "	<!-- Top Block -->";
+$message .= "	<tr style='$darkBlue'>";
+$message .= "		<td style='$tabletrtd' colspan='4'>";
+$message .= "			<table style='$table $tabletrtd'>";
+$message .= "				<tr style='$tabletrtd' height='266'>";
+$message .= "					<!-- Left Space -->";
+$message .= "					<td style='$tabletrtd $vertSpacer' height='266'><img style='$img' src='http://www.kylejasso.io/Email/images/email_05.png' /></td>";
+$message .= "					<!-- Center Space -->";
+$message .= "					<td style='$tabletrtd $centerSpace'>";
+$message .= "						<!-- 2x2 grid -->";
+$message .= "						<table style='$table $tabletrtd'>";
+$message .= "							<tr style='$tabletrtd' height='133'>";
+$message .= "							<!-- Coder -->";
+$message .= "								<td style='$tabletrtd' height=133'>";
+$message .= "									<table style='$table $tabletrtd' height='133'>";
+$message .= "										<tr style='$tabletrtd' height='133'>";
+$message .= "										<!-- Computer -->";
+$message .= "											<td style='$tabletrtd width:72px;'>";
+$message .= "												<table style='$table $tabletrtd' height='133'>";
+$message .= "													<tr style='$tabletrtd'>";
+$message .= "														<td style='$tabletrtd'><img style='$img' src='http://www.kylejasso.io/Email/images/email_06.png' /></td>";
+$message .= "													</tr>";
+$message .= "													<tr style='$tabletrtd'>";
+$message .= "														<td style='$tabletrtd background:#040404; width:72px;' height='78'><img style='$img' src='http://www.kylejasso.io/Email/images/email_13.png' /></td>";
+$message .= "													</tr>";
+$message .= "												</table>";
+$message .= "											</td>";
+$message .= "										<!-- Guy -->";
+$message .= "											<td style='$tabletrtd width:77px;'>";
+$message .= "												<table style='$table $tabletrtd'>";
+$message .= "													<tr style='$tabletrtd'>";
+$message .= "														<td style='$tabletrtd background:#101010; width:77px;' height='38'><img style='$img' src='http://www.kylejasso.io/Email/images/email_07.png' /></td>";
+$message .= "													</tr>";
+$message .= "													<tr style='$tabletrtd'>";
+$message .= "														<td style='$tabletrtd background:#efd6d6; width:77px;' height='50'><img style='$img' src='http://www.kylejasso.io/Email/images/email_12.png' /></td>";
+$message .= "													</tr>";
+$message .= "													<tr style='$tabletrtd'>";
+$message .= "													<!-- Tripple Block -->";
+$message .= "														<td style='$tabletrtd'>";
+$message .= "															<table style='$table $tabletrtd'>";
+$message .= "																<tr style='$tabletrtd'>";
+$message .= "																	<td style='$tabletrtd background:#040404; width:22px;' height='45'><img style='$img' src='http://www.kylejasso.io/Email/images/email_16.png' /></td>";
+$message .= "																	<td style='$tabletrtd background:#efd6d6; width:28px;' height='45'><img style='$img' src='http://www.kylejasso.io/Email/images/email_17.png' /></td>";
+$message .= "																	<td style='$tabletrtd background:#004983; width:27px;' height='45'><img style='$img' src='http://www.kylejasso.io/Email/images/email_18.png' /></td>";
+$message .= "																</tr>";
+$message .= "															</table>";
+$message .= "														</td>";
+$message .= "													</tr>";
+$message .= "												</table>";
+$message .= "											</td>";
+$message .= "										<!-- Chair -->";
+$message .= "											<td style='$tabletrtd width:27px;'>";
+$message .= "												<table style='$table $tabletrtd'>";
+$message .= "													<tr style='$tabletrtd'>";
+$message .= "														<td style='$tabletrtd width:27px;' height='70'><img style='$img' src='http://www.kylejasso.io/Email/images/email_08.png' /></td>";
+$message .= "													</tr>";
+$message .= "													<tr style='$tabletrtd'>";
+$message .= "														<td style='$tabletrtd background:#004983; width:27px;' height='63'><img style='$img' src='http://www.kylejasso.io/Email/images/email_15.png' /></td>";
+$message .= "													</tr>";
+$message .= "												</table>";
+$message .= "											</td>";
+$message .= "										<!-- Spacer -->";
+$message .= "											<td style='$tabletrtd width:47px;'>";
+$message .= "												<table style='$table $tabletrtd'>";
+$message .= "													<tr style='$tabletrtd'>";
+$message .= "														<td style='$tabletrtd width:47px;' height='55'><img style='$img' src='http://www.kylejasso.io/Email/images/email_09.png' /></td>";
+$message .= "													</tr>";
+$message .= "													<tr style='$tabletrtd'>";
+$message .= "														<td style='$tabletrtd width:47px;' height='78'><img style='$img' src='http://www.kylejasso.io/Email/images/email_14.png' /></td>";
+$message .= "													</tr>";
+$message .= "												</table>";
+$message .= "											</td>";
+$message .= "										</tr>";
+$message .= "									</table>";
+$message .= "								</td>";
+$message .= "							<!-- Title -->";
+$message .= "								<td style='$tabletrtd width:310px;' height='133'>";
+$message .= "									<img style='$img' src='http://www.kylejasso.io/Email/images/email_10.png' alt='WEB DEVELOPER' style='font-family: sans-serif; color: #fbfbfb; font-style: italic; font-size: 30px;'/>";
+$message .= "								</td>";
+$message .= "							</tr>";
+$message .= "							<tr style='$tabletrtd' height='133'>";
+$message .= "							<!-- Desk -->";
+$message .= "								<td style='$tabletrtd'>";
+$message .= "									<table style='$table $tabletrtd width:223px;'>";
+$message .= "										<tr style='$tabletrtd'>";
+$message .= "											<td style='$tabletrtd background:#838383; width:72px;' height='98'><img style='$img' src='http://www.kylejasso.io/Email/images/email_19.png' /></td>";
+$message .= "											<td style='$tabletrtd background:#838383; width:77px;' height='98'><img style='$img' src='http://www.kylejasso.io/Email/images/email_20.png' /></td>";
+$message .= "											<td style='$tabletrtd background:#838383; width:74px;' height='98'><img style='$img' src='http://www.kylejasso.io/Email/images/email_21.png' /></td>";
+$message .= "										</tr>";
+$message .= "										<tr style='$tabletrtd'>";
+$message .= "											<td style='$tabletrtd' colspan='3'><img style='$img' src='http://www.kylejasso.io/Email/images/email_23.png' /></td>";
+$message .= "										</tr>";
+$message .= "									</table>";
+$message .= "								</td>";
+$message .= "							<!-- Computer -->";
+$message .= "								<td style='$tabletrtd background:#101010; width:310px;' height='133'><img style='$img' src='http://www.kylejasso.io/Email/images/email_22.png' /></td>";
+$message .= "							</tr>";
+$message .= "						</table>";
+$message .= "					</td>";
+$message .= "					<!-- Right Space -->";
+$message .= "					<td style='$tabletrtd $vertSpacer' height='266'><img style='$img' src='http://www.kylejasso.io/Email/images/email_11.png' /></td>";
+$message .= "				</tr>";
+$message .= "			</table>";
+$message .= "		</td>";
+$message .= "	</tr>";
+
+$message .= "	<!-- Lower Block -->";
+$message .= "	<tr style='$tabletrtd'>";
+$message .= "		<td style='$tabletrtd' colspan='4'>";
+$message .= "			<table style='$table $tabletrtd'>";
+$message .= "				<tr style='$tabletrtd'>";
+$message .= "					<td style='$tabletrtd'>";
+$message .= "						<table style='$table $tabletrtd width:256px;'>";
+$message .= "							<tr style='$tabletrtd'>";
+$message .= "								<td style='$tabletrtd background:#f37021; width:256px' height='76'><img style='$img margin-left:-20px; width:276px; max-width:276px; font-family: sans-serif; color: #101010; font-style: italic; font-size: 30px;' src='http://www.kylejasso.io/Email/images/email_25.png' alt='Portfolio' /></td>";
+$message .= "							</tr>";
+$message .= "							<tr style='$tabletrtd'>";
+$message .= "								<td style='$tabletrtd'><img style='$img' src='http://www.kylejasso.io/Email/images/email_30.png' /></td>";
+$message .= "							</tr>";
+$message .= "						</table>";
+$message .= "					</td>";
+$message .= "					<td style='$tabletrtd background:#101010; width:310px;' height='103'>a<img style='$img' src='http://www.kylejasso.io/Email/images/email_26.png' /></td>";
+$message .= "					<td style='$tabletrtd'><img style='$img' src='http://www.kylejasso.io/Email/images/email_27.png' /></td>";
+$message .= "				</tr>";
+$message .= "			</table>";
+$message .= "		</td>";
+$message .= "	</tr>";
+$message .= "	<tr style='$tabletrtd $mail'>";
+$message .= "		<td style='$tabletrtd'>";
+$message .= "			<p style='$note'>$emailnote</p>";
+$message .= "		</td>";
+$message .= "	</tr>";
+$message .= "</table>";
+$message .= "</body>";
+$message .= "</html>";
+
+$from = "kyle.jasso@gmail.com";
+$to = $_POST['to'];
+$subject = $_POST['subject'];
+
+$headers = "From: $from \r\n";
+$headers .= "MIME-Version: 1.0\r\n";
+$headers .= "Content-Type: text/html; charset=ISO-8859-1\r\n";
+
+$mail = mail($to,$subject,$message,$headers);
+
+if($mail) {
+	echo $message;
+} else {
+	echo "Error";
+}
+
+?>
