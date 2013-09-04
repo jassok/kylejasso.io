@@ -1,0 +1,80 @@
+/* == Headings =============================================== */
+h1 {
+    font-size:3.75em;
+}
+h2 {
+    font-size:3em;
+}
+h3 {
+    font-size:2.25em;
+}
+h4 {
+    font-size:1.875em;
+}
+h5 {
+    font-size:1.5em;
+}
+h6 {
+    font-size:1.125em;
+}
+
+/* == Font Icons via Fontello ================================ */
+@font-face {
+  font-family: 'fontello';
+  src: url('assets/fontello.eot?25529582');
+  src: url('assets/fontello.eot?25529582#iefix') format('embedded-opentype'),
+       url('assets/fontello.woff?25529582') format('woff'),
+       url('assets/fontello.ttf?25529582') format('truetype'),
+       url('assets/fontello.svg?25529582#fontello') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+ [class^="icon-"]:before, [class*=" icon-"]:before {
+  font-family: "fontello";
+  font-style: normal;
+  font-weight: normal;
+  speak: none;
+  display: inline-block;
+  text-decoration: inherit;
+  width: 1em;
+  margin-right: .2em;
+  text-align: center;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1em;
+  margin-left: .2em;
+}
+
+.icon-th-list:before { content: '\e802'; }
+.icon-th:before { content: '\e801'; }
+.icon-pencil:before { content: '\e807'; }
+.icon-th-large:before { content: '\e800'; }
+.icon-tags:before { content: '\e806'; }
+.icon-left-open:before { content: '\e81f'; }
+.icon-right-open:before { content: '\e81e'; }
+.icon-firefox:before { content: '\e81c'; }
+.icon-chrome:before { content: '\e81b'; }
+.icon-ie:before { content: '\e81d'; }
+.icon-link-ext:before { content: '\e814'; }
+.icon-docs:before { content: '\e813'; }
+.icon-gplus:before { content: '\e812'; }
+.icon-sort:before { content: '\e810'; }
+.icon-sort-down:before { content: '\e80e'; }
+.icon-sort-up:before { content: '\e80f'; }
+.icon-mail-alt:before { content: '\e809'; }
+.icon-linkedin:before { content: '\e80c'; }
+.icon-doc-text:before { content: '\e811'; }
+.icon-github:before { content: '\e80d'; }
+.icon-terminal:before { content: '\e80b'; }
+.icon-code:before { content: '\e808'; }
+.icon-html5:before { content: '\e816'; }
+.icon-css3:before { content: '\e815'; }
+.icon-stackoverflow:before { content: '\e817'; }
+.icon-apple:before { content: '\e819'; }
+.icon-windows:before { content: '\e81a'; }
+.icon-android:before { content: '\e818'; }
+.icon-folder:before { content: '\e804'; }
+.icon-folder-open:before { content: '\e805'; }
+.icon-phone:before { content: '\e80a'; }
+.icon-download:before { content: '\e803'; }

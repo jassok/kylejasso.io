@@ -1,0 +1,43 @@
+/* == Sprite Sheets ========================================== */
+$icons: sprite-map("sprites/*.png", $layout: smart);
+$icons-2x: sprite-map("sprites2x/*.png", $layout: smart);
+
+.about-icon {
+    @include use-sprite('about');
+
+    &.hover {
+        @include use-sprite('about-hover');
+    }
+}
+cd
+.blog-icon {
+    @include use-sprite('blog');
+
+    &.hover {
+        @include use-sprite('blog-hover');
+    }
+}
+
+.contact-icon {
+    @include use-sprite('contact');
+
+    &.hover {
+        @include use-sprite('contact-hover');
+    }
+}
+
+.labs-icon {
+    @include use-sprite('labs');
+
+    &.hover {
+        @include use-sprite('labs-hover');
+    }
+}
+
+.projects-icon {
+    @include use-sprite('projects');
+
+    &.hover {
+        @include use-sprite('projects-hover');
+    }
+}

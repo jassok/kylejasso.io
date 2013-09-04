@@ -12,3 +12,6 @@ debug_log.txt
 .admin/
 
 sftp-config.json
+
+images/sprites-*
+images/sprites2x-*

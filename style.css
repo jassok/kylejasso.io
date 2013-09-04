@@ -1,5 +1,5 @@
-/* == Base Styles ========================= */
-/* == Vendor Styles ======================= */
+@import url(http://fonts.googleapis.com/css?family=Wire+One|PT+Sans+Narrow:400,700);
+/* == Vendor Styles ========================================== */
 .pln { color: #000; }
 
 @media screen { .str { color: #080; }
@@ -30,6 +30,112 @@ li.L0, li.L1, li.L2, li.L3, li.L5, li.L6, li.L7, li.L8 { list-style-type: none; 
 
 li.L1, li.L3, li.L5, li.L7, li.L9 { background: #eee; }
 
-/* == Framework Styles ==================== */
-/* == Layout Styles ======================= */
-/* == Module Styles ======================= */
+/* == Framework Styles ======================================= */
+/* == Headings =============================================== */
+h1 { font-size: 3.75em; }
+
+h2 { font-size: 3em; }
+
+h3 { font-size: 2.25em; }
+
+h4 { font-size: 1.875em; }
+
+h5 { font-size: 1.5em; }
+
+h6 { font-size: 1.125em; }
+
+/* == Font Icons via Fontello ================================ */
+@font-face { font-family: 'fontello'; src: url("assets/fontello.eot?25529582"); src: url("assets/fontello.eot?25529582#iefix") format("embedded-opentype"), url("assets/fontello.woff?25529582") format("woff"), url("assets/fontello.ttf?25529582") format("truetype"), url("assets/fontello.svg?25529582#fontello") format("svg"); font-weight: normal; font-style: normal; }
+
+[class^="icon-"]:before, [class*=" icon-"]:before { font-family: "fontello"; font-style: normal; font-weight: normal; speak: none; display: inline-block; text-decoration: inherit; width: 1em; margin-right: .2em; text-align: center; font-variant: normal; text-transform: none; line-height: 1em; margin-left: .2em; }
+
+.icon-th-list:before { content: '\e802'; }
+
+.icon-th:before { content: '\e801'; }
+
+.icon-pencil:before { content: '\e807'; }
+
+.icon-th-large:before { content: '\e800'; }
+
+.icon-tags:before { content: '\e806'; }
+
+.icon-left-open:before { content: '\e81f'; }
+
+.icon-right-open:before { content: '\e81e'; }
+
+.icon-firefox:before { content: '\e81c'; }
+
+.icon-chrome:before { content: '\e81b'; }
+
+.icon-ie:before { content: '\e81d'; }
+
+.icon-link-ext:before { content: '\e814'; }
+
+.icon-docs:before { content: '\e813'; }
+
+.icon-gplus:before { content: '\e812'; }
+
+.icon-sort:before { content: '\e810'; }
+
+.icon-sort-down:before { content: '\e80e'; }
+
+.icon-sort-up:before { content: '\e80f'; }
+
+.icon-mail-alt:before { content: '\e809'; }
+
+.icon-linkedin:before { content: '\e80c'; }
+
+.icon-doc-text:before { content: '\e811'; }
+
+.icon-github:before { content: '\e80d'; }
+
+.icon-terminal:before { content: '\e80b'; }
+
+.icon-code:before { content: '\e808'; }
+
+.icon-html5:before { content: '\e816'; }
+
+.icon-css3:before { content: '\e815'; }
+
+.icon-stackoverflow:before { content: '\e817'; }
+
+.icon-apple:before { content: '\e819'; }
+
+.icon-windows:before { content: '\e81a'; }
+
+.icon-android:before { content: '\e818'; }
+
+.icon-folder:before { content: '\e804'; }
+
+.icon-folder-open:before { content: '\e805'; }
+
+.icon-phone:before { content: '\e80a'; }
+
+.icon-download:before { content: '\e803'; }
+
+/* == Global Styles ========================================== */
+/* == Sprite Sheets ========================================== */
+.about-icon { display: inline-block; overflow: hidden; width: 191px; height: 179px; background-image: url('images/sprites.png'); background-position: 0 -894px; background-repeat: no-repeat; }
+@media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 3 / 2), (min-device-pixel-ratio: 2) { .about-icon { width: 191px; height: 179px; background-image: url('images/sprites2x.png'); background-position: 0 -894px; background-size: 191px 1630px; } }
+.about-icon.hover { display: inline-block; overflow: hidden; width: 191px; height: 179px; background-image: url('images/sprites.png'); background-position: 0 -1073px; background-repeat: no-repeat; }
+@media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 3 / 2), (min-device-pixel-ratio: 2) { .about-icon.hover { width: 191px; height: 179px; background-image: url('images/sprites2x.png'); background-position: 0 -1073px; background-size: 191px 1630px; } }
+
+cd .blog-icon { display: inline-block; overflow: hidden; width: 100px; height: 189px; background-image: url('images/sprites.png'); background-position: 0 -1441px; background-repeat: no-repeat; }
+@media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 3 / 2), (min-device-pixel-ratio: 2) { cd .blog-icon { width: 100px; height: 189px; background-image: url('images/sprites2x.png'); background-position: 0 -1441px; background-size: 191px 1630px; } }
+cd .blog-icon.hover { display: inline-block; overflow: hidden; width: 100px; height: 189px; background-image: url('images/sprites.png'); background-position: 0 -1252px; background-repeat: no-repeat; }
+@media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 3 / 2), (min-device-pixel-ratio: 2) { cd .blog-icon.hover { width: 100px; height: 189px; background-image: url('images/sprites2x.png'); background-position: 0 -1252px; background-size: 191px 1630px; } }
+
+.contact-icon { display: inline-block; overflow: hidden; width: 134px; height: 134px; background-image: url('images/sprites.png'); background-position: 0 0; background-repeat: no-repeat; }
+@media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 3 / 2), (min-device-pixel-ratio: 2) { .contact-icon { width: 134px; height: 134px; background-image: url('images/sprites2x.png'); background-position: 0 0; background-size: 191px 1630px; } }
+.contact-icon.hover { display: inline-block; overflow: hidden; width: 134px; height: 134px; background-image: url('images/sprites.png'); background-position: 0 -134px; background-repeat: no-repeat; }
+@media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 3 / 2), (min-device-pixel-ratio: 2) { .contact-icon.hover { width: 134px; height: 134px; background-image: url('images/sprites2x.png'); background-position: 0 -134px; background-size: 191px 1630px; } }
+
+.labs-icon { display: inline-block; overflow: hidden; width: 188px; height: 172px; background-image: url('images/sprites.png'); background-position: 0 -550px; background-repeat: no-repeat; }
+@media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 3 / 2), (min-device-pixel-ratio: 2) { .labs-icon { width: 188px; height: 172px; background-image: url('images/sprites2x.png'); background-position: 0 -550px; background-size: 191px 1630px; } }
+.labs-icon.hover { display: inline-block; overflow: hidden; width: 188px; height: 172px; background-image: url('images/sprites.png'); background-position: 0 -722px; background-repeat: no-repeat; }
+@media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 3 / 2), (min-device-pixel-ratio: 2) { .labs-icon.hover { width: 188px; height: 172px; background-image: url('images/sprites2x.png'); background-position: 0 -722px; background-size: 191px 1630px; } }
+
+.projects-icon { display: inline-block; overflow: hidden; width: 184px; height: 141px; background-image: url('images/sprites.png'); background-position: 0 -409px; background-repeat: no-repeat; }
+@media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 3 / 2), (min-device-pixel-ratio: 2) { .projects-icon { width: 184px; height: 141px; background-image: url('images/sprites2x.png'); background-position: 0 -409px; background-size: 191px 1630px; } }
+.projects-icon.hover { display: inline-block; overflow: hidden; width: 184px; height: 141px; background-image: url('images/sprites.png'); background-position: 0 -268px; background-repeat: no-repeat; }
+@media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 3 / 2), (min-device-pixel-ratio: 2) { .projects-icon.hover { width: 184px; height: 141px; background-image: url('images/sprites2x.png'); background-position: 0 -268px; background-size: 191px 1630px; } }

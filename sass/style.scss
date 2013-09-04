@@ -1,19 +1,19 @@
 @import "compass";
 
 
-/* == Base Styles ========================= */
+// == Base Styles ============================================ */
 @import "base";
 
-/* == Vendor Styles ======================= */
+/* == Vendor Styles ========================================== */
 @import "vendor/prettify";
 
 
-/* == Framework Styles ==================== */
+/* == Framework Styles ======================================= */
 @import "framework/grid";
 @import "framework/sprites";
 @import "framework/typography";
 
-/* == Layout Styles ======================= */
-@import "layout/global";
+// == Layout Styles ========================================== */
+@import "layout/all";
 
-/* == Module Styles ======================= */
+// == Module Styles ========================================== */
