@@ -1,0 +1,7 @@
+User-agent: *
+Disallow: /.admin/
+Disallow: /.admin
+Disallow: /install.php
+Disallow: /highlighter/
+Disallow: /conn.php
+Disallow: /database.php

@@ -1,0 +1,14 @@
+.ftpquota
+.htaccess
+
+error_log
+debug_log.txt
+
+.sass-cache
+*.sublime-project
+*.sublime-workspace
+.DS_Store
+
+.admin/
+
+sftp-config.json
