@@ -1,4 +1,15 @@
+@function ems($target, $context: $font-base) {
+  @if $target == 0 { @return 0 }
+  @return $target / $context + 0em;
+}
+
 /* == Headings =============================================== */
+h1,h2,h3,
+h4,h5,h6 {
+  font-family:$font-heading-family;
+  font-weight:100;
+}
+
 h1 {
     font-size:3.75em;
 }

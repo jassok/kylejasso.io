@@ -5,9 +5,11 @@ $font-heading-family: 'Wire One', sans-serif;
 $base-font-size: 16px;
 $base-line-height: 1em;
 $base-letter-spacing:.025em;
+$font-base-percentage: (($base-font-size / 16px) * 100) + 0%;
 
 // == Color Scheme =========================================== */
 $white: #fbfbfb;
+$black: #2d2d2d;
 $gray: #5d5d5d;
 $blue: #189ad7;
 $green: #35ca6a;

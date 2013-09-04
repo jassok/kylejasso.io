@@ -1,4 +1,12 @@
 @import url(http://fonts.googleapis.com/css?family=Wire+One|PT+Sans+Narrow:400,700);
+/* You know, I bet you're thinking this looks like a garbled
+*  mess. And you would be right. It is prety messy and hard to
+*  understand; however, the good news is. I use Sass and Compass!
+*  So while the browser see's this crazy compressed long version
+*  I get to safely work inside my organized sass folder. Want to
+*  check it out? Well too bad! You can't!
+* (Just kidding: http://www.kylejasso.io/sass/)
+*/
 /* == Vendor Styles ========================================== */
 .pln { color: #000; }
 
@@ -32,6 +40,8 @@ li.L1, li.L3, li.L5, li.L7, li.L9 { background: #eee; }
 
 /* == Framework Styles ======================================= */
 /* == Headings =============================================== */
+h1, h2, h3, h4, h5, h6 { font-family: "Wire One", sans-serif; font-weight: 100; }
+
 h1 { font-size: 3.75em; }
 
 h2 { font-size: 3em; }
@@ -114,6 +124,25 @@ h6 { font-size: 1.125em; }
 .icon-download:before { content: '\e803'; }
 
 /* == Global Styles ========================================== */
+/* == Global Presets ========================================= */
+body { font-size: 100%; -webkit-font-smoothing: antialiased; -webkit-text-size-adjust: 100%; margin: 0; padding: 0; color: #2d2d2d; }
+
+a { color: #2d2d2d; }
+a:hover { color: #a467ef; }
+
+img { max-width: 100%; -ms-interpolation-mode: bicubic; }
+
+input { border: 1px solid #aaa; padding: 1%; outline: none; margin: 0 0 1% 0; height: 1%; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
+
+.centered { max-width: 1400px; margin: 0 auto; padding: .25%; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
+
+.clearfix:before, .clearfix:after { content: '\0020'; display: block; overflow: hidden; visibility: hidden; width: 0; height: 0; clear: both; }
+
+/* == Header Styles ========================================== */
+header { padding: .25%; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
+header h1 { position: relative; display: inline-block; float: left; margin-bottom: 0; line-height: 0; }
+header h2 { position: relative; display: inline-block; float: left; padding-left: .75em; margin-bottom: 0; line-height: .3em; }
+
 /* == Sprite Sheets ========================================== */
 .about-icon { display: inline-block; overflow: hidden; width: 191px; height: 179px; background-image: url('images/sprites.png'); background-position: 0 -894px; background-repeat: no-repeat; }
 @media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 3 / 2), (min-device-pixel-ratio: 2) { .about-icon { width: 191px; height: 179px; background-image: url('images/sprites2x.png'); background-position: 0 -894px; background-size: 191px 1630px; } }
