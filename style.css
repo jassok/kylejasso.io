@@ -127,38 +127,29 @@ h6 { font-size: 1.125em; }
 /* == Global Presets ========================================= */
 body { font-size: 100%; font-family: "PT Sans Narrow", sans-serif; -webkit-font-smoothing: antialiased; -webkit-text-size-adjust: 100%; margin: 0; padding: 0; color: #2d2d2d; background: url(images/cubes.png) repeat; }
 
-a { color: #2d2d2d; }
+a { color: #2d2d2d; text-decoration: none; }
 a:hover { color: #a467ef; }
 
 img { max-width: 100%; -ms-interpolation-mode: bicubic; }
 
 input { border: 1px solid #aaa; padding: 1%; outline: none; margin: 0 0 1% 0; height: 1%; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
 
-main { margin-top: 15px; }
-
 .centered { max-width: 1400px; margin: 0 auto; padding: .25%; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
 
 .clearfix:before, .clearfix:after { content: '\0020'; display: block; overflow: hidden; visibility: hidden; width: 0; height: 0; clear: both; }
 
 /* == Header Styles ========================================== */
-header { padding: .25%; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
+header { padding: .25%; margin: 10px 10px 10%; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
 header h1 { position: relative; display: inline-block; float: left; margin-bottom: 0; line-height: 0; }
 header h2 { position: relative; display: inline-block; float: left; padding-left: .75em; margin-bottom: 0; line-height: .3em; }
 
 /* == Sprite Sheets ========================================== */
 /* == Index Page Styles ====================================== */
-nav { margin-top: 5%; position: relative; /*Sliding Text and Icon Menu Style*/ }
-nav .sti-menu { position: relative; margin: 80px auto 0 auto; }
-nav .sti-menu li { list-style: none; float: left; width: 18.75%; height: 320px; margin: .625%; padding-bottom: 5%; }
-nav .sti-menu li a { display: block; overflow: hidden; background: #fff; text-align: center; height: 100%; width: 100%; position: relative; }
-nav .sti-menu li a h2 { font-weight: bold; text-transform: uppercase; position: absolute; padding: 10px 0; margin-bottom: 0; width: 100%; top: 140px; left: 0px; }
-nav .sti-menu li a p { color: #111; position: absolute; top: 238px; left: 0px; width: 100%; padding: 10px 0; }
-nav .sti-icon { width: 100px; height: 100px; position: absolute; background-position: top left; background-repeat: no-repeat; background-color: transparent; left: 50px; top: 30px; }
-nav .sti-icon-care { background-image: url(../images/care.png); }
-nav .sti-icon-alternative { background-image: url(../images/alternative.png); }
-nav .sti-icon-family { background-image: url(../images/family.png); }
-nav .sti-icon-info { background-image: url(../images/info.png); }
-nav .sti-icon-technology { background-image: url(../images/technology.png); }
+nav ul { margin: 0; padding: 0; }
+nav ul li { position: relative; display: inline-block; overflow: hidden; padding: 2%; width: 18.75%; background: #fbfbfb; list-style: none; text-align: center; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
+nav ul li a:hover { color: #2d2d2d; }
+nav ul li h2 { margin-bottom: 0; }
+nav ul li img { max-height: 157px; }
 
 /* == About Page Styles ====================================== */
 /* == Projects Page Styles =================================== */

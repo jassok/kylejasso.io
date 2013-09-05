@@ -39,5 +39,4 @@
         <h2>web developer</h2>
     </a>
 </header>
-
 <main class="<?php echo $page; ?>">

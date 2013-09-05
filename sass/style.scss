@@ -1,3 +1,4 @@
+@import "compass";
 /* You know, I bet you're thinking this looks like a garbled
 *  mess. And you would be right. It is prety messy and hard to
 *  understand; however, the good news is. I use Sass and Compass!
@@ -6,8 +7,6 @@
 *  check it out? Well too bad! You can't!
 * (Just kidding: http://www.kylejasso.io/sass/)
 */
-
-@import "compass";
 
 // == Base Styles ============================================ */
 @import "base";

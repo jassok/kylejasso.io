@@ -12,6 +12,7 @@ body {
 
 a {
     color: $black;
+    text-decoration:none;
     &:hover {
         color: $violet;
     }
@@ -29,10 +30,6 @@ input {
     margin: 0 0 1% 0;
     height: 1%;
     @include box-sizing(border-box);
-}
-
-main {
-    margin-top:15px;
 }
 
 .centered {
@@ -56,6 +53,7 @@ main {
 /* == Header Styles ========================================== */
 header {
     padding: .25%;
+    margin:10px 10px 10%;
     @include box-sizing(border-box);
     h1 {
         position: relative;
