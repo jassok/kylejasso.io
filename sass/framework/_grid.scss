@@ -1,0 +1,11 @@
+@mixin col($amount, $context: $max-width) {
+    position:relative;
+    float:left;
+    width:percentage(($column-width * $amount) / $max-width);
+    display:inline-block;
+    @include box-sizing(border-box);
+}
+
+@mixin breakpoint($size) {
+    @media only screen and (max-width: $size) { @content; }
+}

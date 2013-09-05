@@ -125,7 +125,7 @@ h6 { font-size: 1.125em; }
 
 /* == Global Styles ========================================== */
 /* == Global Presets ========================================= */
-body { font-size: 100%; -webkit-font-smoothing: antialiased; -webkit-text-size-adjust: 100%; margin: 0; padding: 0; color: #2d2d2d; }
+body { font-size: 100%; font-family: "PT Sans Narrow", sans-serif; -webkit-font-smoothing: antialiased; -webkit-text-size-adjust: 100%; margin: 0; padding: 0; color: #2d2d2d; background: url(images/cubes.png) repeat; }
 
 a { color: #2d2d2d; }
 a:hover { color: #a467ef; }
@@ -133,6 +133,8 @@ a:hover { color: #a467ef; }
 img { max-width: 100%; -ms-interpolation-mode: bicubic; }
 
 input { border: 1px solid #aaa; padding: 1%; outline: none; margin: 0 0 1% 0; height: 1%; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
+
+main { margin-top: 15px; }
 
 .centered { max-width: 1400px; margin: 0 auto; padding: .25%; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
 
@@ -144,27 +146,21 @@ header h1 { position: relative; display: inline-block; float: left; margin-botto
 header h2 { position: relative; display: inline-block; float: left; padding-left: .75em; margin-bottom: 0; line-height: .3em; }
 
 /* == Sprite Sheets ========================================== */
-.about-icon { display: inline-block; overflow: hidden; width: 191px; height: 179px; background-image: url('images/sprites.png'); background-position: 0 -894px; background-repeat: no-repeat; }
-@media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 3 / 2), (min-device-pixel-ratio: 2) { .about-icon { width: 191px; height: 179px; background-image: url('images/sprites2x.png'); background-position: 0 -894px; background-size: 191px 1630px; } }
-.about-icon.hover { display: inline-block; overflow: hidden; width: 191px; height: 179px; background-image: url('images/sprites.png'); background-position: 0 -1073px; background-repeat: no-repeat; }
-@media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 3 / 2), (min-device-pixel-ratio: 2) { .about-icon.hover { width: 191px; height: 179px; background-image: url('images/sprites2x.png'); background-position: 0 -1073px; background-size: 191px 1630px; } }
+/* == Index Page Styles ====================================== */
+nav { margin-top: 5%; position: relative; /*Sliding Text and Icon Menu Style*/ }
+nav .sti-menu { position: relative; margin: 80px auto 0 auto; }
+nav .sti-menu li { list-style: none; float: left; width: 18.75%; height: 320px; margin: .625%; padding-bottom: 5%; }
+nav .sti-menu li a { display: block; overflow: hidden; background: #fff; text-align: center; height: 100%; width: 100%; position: relative; }
+nav .sti-menu li a h2 { font-weight: bold; text-transform: uppercase; position: absolute; padding: 10px 0; margin-bottom: 0; width: 100%; top: 140px; left: 0px; }
+nav .sti-menu li a p { color: #111; position: absolute; top: 238px; left: 0px; width: 100%; padding: 10px 0; }
+nav .sti-icon { width: 100px; height: 100px; position: absolute; background-position: top left; background-repeat: no-repeat; background-color: transparent; left: 50px; top: 30px; }
+nav .sti-icon-care { background-image: url(../images/care.png); }
+nav .sti-icon-alternative { background-image: url(../images/alternative.png); }
+nav .sti-icon-family { background-image: url(../images/family.png); }
+nav .sti-icon-info { background-image: url(../images/info.png); }
+nav .sti-icon-technology { background-image: url(../images/technology.png); }
 
-cd .blog-icon { display: inline-block; overflow: hidden; width: 100px; height: 189px; background-image: url('images/sprites.png'); background-position: 0 -1441px; background-repeat: no-repeat; }
-@media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 3 / 2), (min-device-pixel-ratio: 2) { cd .blog-icon { width: 100px; height: 189px; background-image: url('images/sprites2x.png'); background-position: 0 -1441px; background-size: 191px 1630px; } }
-cd .blog-icon.hover { display: inline-block; overflow: hidden; width: 100px; height: 189px; background-image: url('images/sprites.png'); background-position: 0 -1252px; background-repeat: no-repeat; }
-@media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 3 / 2), (min-device-pixel-ratio: 2) { cd .blog-icon.hover { width: 100px; height: 189px; background-image: url('images/sprites2x.png'); background-position: 0 -1252px; background-size: 191px 1630px; } }
-
-.contact-icon { display: inline-block; overflow: hidden; width: 134px; height: 134px; background-image: url('images/sprites.png'); background-position: 0 0; background-repeat: no-repeat; }
-@media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 3 / 2), (min-device-pixel-ratio: 2) { .contact-icon { width: 134px; height: 134px; background-image: url('images/sprites2x.png'); background-position: 0 0; background-size: 191px 1630px; } }
-.contact-icon.hover { display: inline-block; overflow: hidden; width: 134px; height: 134px; background-image: url('images/sprites.png'); background-position: 0 -134px; background-repeat: no-repeat; }
-@media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 3 / 2), (min-device-pixel-ratio: 2) { .contact-icon.hover { width: 134px; height: 134px; background-image: url('images/sprites2x.png'); background-position: 0 -134px; background-size: 191px 1630px; } }
-
-.labs-icon { display: inline-block; overflow: hidden; width: 188px; height: 172px; background-image: url('images/sprites.png'); background-position: 0 -550px; background-repeat: no-repeat; }
-@media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 3 / 2), (min-device-pixel-ratio: 2) { .labs-icon { width: 188px; height: 172px; background-image: url('images/sprites2x.png'); background-position: 0 -550px; background-size: 191px 1630px; } }
-.labs-icon.hover { display: inline-block; overflow: hidden; width: 188px; height: 172px; background-image: url('images/sprites.png'); background-position: 0 -722px; background-repeat: no-repeat; }
-@media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 3 / 2), (min-device-pixel-ratio: 2) { .labs-icon.hover { width: 188px; height: 172px; background-image: url('images/sprites2x.png'); background-position: 0 -722px; background-size: 191px 1630px; } }
-
-.projects-icon { display: inline-block; overflow: hidden; width: 184px; height: 141px; background-image: url('images/sprites.png'); background-position: 0 -409px; background-repeat: no-repeat; }
-@media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 3 / 2), (min-device-pixel-ratio: 2) { .projects-icon { width: 184px; height: 141px; background-image: url('images/sprites2x.png'); background-position: 0 -409px; background-size: 191px 1630px; } }
-.projects-icon.hover { display: inline-block; overflow: hidden; width: 184px; height: 141px; background-image: url('images/sprites.png'); background-position: 0 -268px; background-repeat: no-repeat; }
-@media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 3 / 2), (min-device-pixel-ratio: 2) { .projects-icon.hover { width: 184px; height: 141px; background-image: url('images/sprites2x.png'); background-position: 0 -268px; background-size: 191px 1630px; } }
+/* == About Page Styles ====================================== */
+/* == Projects Page Styles =================================== */
+/* == Labs Page Styles ======================================= */
+/* == Contact Page Styles ==================================== */

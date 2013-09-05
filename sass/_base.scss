@@ -1,3 +1,8 @@
+// == Column System ========================================== */
+$max-width: 1400px;
+$columns: 16;
+$column-width: $max-width/$columns;
+
 // == Typography ============================================= */
 @import url(http://fonts.googleapis.com/css?family=Wire+One|PT+Sans+Narrow:400,700);
 $font-base-family: 'PT Sans Narrow', sans-serif;

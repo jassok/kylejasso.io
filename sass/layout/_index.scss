@@ -1,0 +1,72 @@
+$headerDuration: 0.25s;
+$headerEase: ease-in-out;
+
+nav {
+    margin-top: 5%;
+    position:relative;
+    /*Sliding Text and Icon Menu Style*/
+    .sti-menu {
+        position: relative;
+        margin: 80px auto 0 auto;
+    }
+    .sti-menu li {
+        list-style:none;
+        float: left;
+        width: 18.75%;
+        height: 320px;
+        margin: .625%;
+        padding-bottom:5%;
+    }
+    .sti-menu li a {
+        display: block;
+        overflow: hidden;
+        background: #fff;
+        text-align: center;
+        height: 100%;
+        width: 100%;
+        position: relative;
+    }
+    .sti-menu li a h2 {
+        font-weight: bold;
+        text-transform: uppercase;
+        position: absolute;
+        padding: 10px 0;
+        margin-bottom:0;
+        width: 100%;
+        top: 140px;
+        left: 0px;
+    }
+    .sti-menu li a p {
+        color: #111;
+        position: absolute;
+        top: 208px;
+        left: 0px;
+        width: 100%;
+        padding: 10px 0;
+    }
+    .sti-icon {
+        width: 100px;
+        height: 100px;
+        position: absolute;
+        background-position: top left;
+        background-repeat: no-repeat;
+        background-color: transparent;
+        left: 50px;
+        top: 30px;
+    }
+    .sti-icon-care {
+        background-image: url(../images/care.png);
+    }
+    .sti-icon-alternative {
+        background-image: url(../images/alternative.png);
+    }
+    .sti-icon-family {
+        background-image: url(../images/family.png);
+    }
+    .sti-icon-info {
+        background-image: url(../images/info.png);
+    }
+    .sti-icon-technology {
+        background-image: url(../images/technology.png);
+    }
+}
