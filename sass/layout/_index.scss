@@ -1,39 +1,77 @@
 $headerDuration: 0.25s;
 $headerEase: ease-in-out;
-
-nav {
-    ul {
-        margin:0;
-        padding:0;
-        li {
-            position:relative;
-            display:inline-block;
-            overflow:hidden;
-            padding:2%;
-            width:18.75%;
-            background:$white;
-            list-style:none;
+.index {
+    nav {
+        ul {
+            margin:0;
+            padding:0;
             text-align:center;
+            li {
+                position:relative;
+                display:inline-block;
+                overflow:hidden;
+                margin:0 2px;
+                width:18.75%;
+                background:$white;
+                list-style:none;
+                text-align:center;
 
-            @include box-sizing(border-box);
+                @include box-sizing(border-box);
+                @include box-shadow(0 0 2px rgba(0,0,0,.4));
 
-            &:hover {
-                //background:#000;
-                //@include transition(all $headerDuration $headerEase);
+                a {
+                    display: block;
+                    padding:10%;
+                }
+
+                a:hover {
+                    color:$black;
+                }
+
+                h2 {
+                    margin-bottom:0;
+                }
+
+                img {
+                    max-height:157px;
+                }
+
             }
+        }
+    }
 
-            a:hover {
-                color:$black;
+    .details {
+        margin:50px 0;
+        .column {
+            @include col(16/3);
+            .wrapper {
+                padding:10px 25px;
+                text-align: center;
+
+                .one-third {
+                    @include col(16/3);
+
+                    i {
+                        font-size:64px;
+                    }
+                }
+                .two-thirds {
+                    @include col((16/3)*2);
+                    text-align:left;
+                }
             }
+        }
+        .cross {
+        }
+        .front {
+        }
+        .server {
 
-            h2 {
-                margin-bottom:0;
+            .wrapper {
+                border:1px solid $gray;
+                border-top:none;
+                border-bottom:none;
             }
-
-            img {
-                max-height:157px;
-            }
-
         }
     }
 }

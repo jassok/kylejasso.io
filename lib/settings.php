@@ -5,7 +5,8 @@
     $author = "Kyle Jasso";
 
     if(strstr($_SERVER['SERVER_NAME'],"localhost")) {
-        define("WEBSITE_URL","http://localhost/kylejasso.io/");
+        //define("WEBSITE_URL","http://localhost/kylejasso.io/");
+        define("WEBSITE_URL","http://localhost/Projects/kylejasso.io/");
 
         // Make sure we show all errors
         ini_set('display_errors', 1);

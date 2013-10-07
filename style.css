@@ -125,6 +125,8 @@ h6 { font-size: 1.125em; }
 
 /* == Global Styles ========================================== */
 /* == Global Presets ========================================= */
+html, body { height: 100; margin: 0; padding: 0; }
+
 body { font-size: 100%; font-family: "PT Sans Narrow", sans-serif; -webkit-font-smoothing: antialiased; -webkit-text-size-adjust: 100%; margin: 0; padding: 0; color: #2d2d2d; background: url(images/cubes.png) repeat; }
 
 a { color: #2d2d2d; text-decoration: none; }
@@ -139,19 +141,37 @@ input { border: 1px solid #aaa; padding: 1%; outline: none; margin: 0 0 1% 0; he
 .clearfix:before, .clearfix:after { content: '\0020'; display: block; overflow: hidden; visibility: hidden; width: 0; height: 0; clear: both; }
 
 /* == Header Styles ========================================== */
-header { padding: .25%; margin: 10px 10px 10%; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
+header { padding: .25%; margin: 10px 10px 7%; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
 header h1 { position: relative; display: inline-block; float: left; margin-bottom: 0; line-height: 0; }
 header h2 { position: relative; display: inline-block; float: left; padding-left: .75em; margin-bottom: 0; line-height: .3em; }
 
+/* == Footer Styles ========================================== */
+footer { background: #2d2d2d; color: #fbfbfb; }
+footer ul { margin: 0; padding: 10px; display: block; text-align: right; }
+footer ul li { list-style: none; display: inline-block; padding: 0 6px; }
+footer ul li a { color: #fbfbfb; }
+
 /* == Sprite Sheets ========================================== */
 /* == Index Page Styles ====================================== */
-nav ul { margin: 0; padding: 0; }
-nav ul li { position: relative; display: inline-block; overflow: hidden; padding: 2%; width: 18.75%; background: #fbfbfb; list-style: none; text-align: center; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
-nav ul li a:hover { color: #2d2d2d; }
-nav ul li h2 { margin-bottom: 0; }
-nav ul li img { max-height: 157px; }
+.index nav ul { margin: 0; padding: 0; text-align: center; }
+.index nav ul li { position: relative; display: inline-block; overflow: hidden; margin: 0 2px; width: 18.75%; background: #fbfbfb; list-style: none; text-align: center; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; -webkit-box-shadow: 0 0 2px rgba(0, 0, 0, 0.4); -moz-box-shadow: 0 0 2px rgba(0, 0, 0, 0.4); box-shadow: 0 0 2px rgba(0, 0, 0, 0.4); }
+.index nav ul li a { display: block; padding: 10%; }
+.index nav ul li a:hover { color: #2d2d2d; }
+.index nav ul li h2 { margin-bottom: 0; }
+.index nav ul li img { max-height: 157px; }
+.index .details { margin: 50px 0; }
+.index .details .column { position: relative; float: left; width: 33.33333%; display: inline-block; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
+.index .details .column .wrapper { padding: 10px 25px; text-align: center; }
+.index .details .column .wrapper .one-third { position: relative; float: left; width: 33.33333%; display: inline-block; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
+.index .details .column .wrapper .one-third i { font-size: 64px; }
+.index .details .column .wrapper .two-thirds { position: relative; float: left; width: 66.66667%; display: inline-block; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; text-align: left; }
+.index .details .server .wrapper { border: 1px solid #5d5d5d; border-top: none; border-bottom: none; }
 
 /* == About Page Styles ====================================== */
+.about { position: relative; height: 100%; }
+.about aside { background: #fbfbfb; position: absolute; top: 0; bottom: 0; left: 150px; width: 200px; }
+.about nav { position: absolute; top: 0; bottom: 0; left: 0; width: 150px; background: #2d2d2d; }
+
 /* == Projects Page Styles =================================== */
 /* == Labs Page Styles ======================================= */
 /* == Contact Page Styles ==================================== */

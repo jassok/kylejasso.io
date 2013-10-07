@@ -1,4 +1,5 @@
 /* == Global Presets ========================================= */
+html, body { height:100; margin:0; padding: 0; }
 body {
     font-size: $font-base-percentage;
     font-family:$font-base-family;
@@ -52,8 +53,8 @@ input {
 
 /* == Header Styles ========================================== */
 header {
-    padding: .25%;
-    margin:10px 10px 10%;
+    padding:.25%;
+    margin:10px 10px 7%;
     @include box-sizing(border-box);
     h1 {
         position: relative;
@@ -69,6 +70,27 @@ header {
         padding-left: .75em;
         margin-bottom: 0;
         line-height: .3em;
+    }
+}
+
+/* == Footer Styles ========================================== */
+footer {
+    background:$black;
+    color:$white;
+    ul {
+        margin:0;
+        padding:10px;
+        display:block;
+        text-align: right;
+        li {
+            list-style:none;
+            display:inline-block;
+            padding:0 6px;
+
+            a {
+                color:$white;
+            }
+        }
     }
 }
 

@@ -1,0 +1,23 @@
+.about {
+    position: relative;
+    height:100%;
+    aside {
+        background:$white;
+        position:absolute;
+        top:0;
+        bottom:0;
+        left:150px;
+        width:200px;
+    }
+    nav {
+        position:absolute;
+        top:0;
+        bottom:0;
+        left:0;
+        width:150px;
+        background:$black;
+    }
+    section {
+
+    }
+}

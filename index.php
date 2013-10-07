@@ -96,7 +96,8 @@
 
         $('nav ul li').hoverIntent({
             over:slideDown,
-            out:slideOut
+            out:slideOut,
+            timeout:200
         });
 
     });
@@ -105,7 +106,7 @@
 <div class="centered">
     <nav>
         <ul>
-            <li data-color="189ad7"><a href="">
+            <li data-color="189ad7"><a href="about">
                 <img src="images/about@2x.png" alt="About Kyle Jasso" data-hover="images/about-hover@2x.png" />
                 <h2>About</h2>
                 <p>Skills, Experience, and Education</p>
@@ -132,6 +133,48 @@
             </a></li>
         </ul>
     </nav>
+
+<?php /*
+    <section class="details">
+        <div class="front column">
+            <div class="wrapper">
+                <h2>Front-end Development</h2>
+                <div class="clearfix">
+                    <div class="one-third"><i class="icon-docs"></i></div>
+                    <div class="two-thirds">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                    consequat. Duis aute irure dolor in reprehenderit in voluptate.</div>
+                </div>
+            </div>
+        </div>
+        <div class="server column">
+            <div class="wrapper">
+                <h2>Server-side Scripting</h2>
+                <div class="clearfix">
+                    <div class="one-third"><i class="icon-docs"></i></div>
+                    <div class="two-thirds">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                    consequat. Duis aute irure dolor in reprehenderit in voluptate.</div>
+                </div>
+            </div>
+        </div>
+        <div class="cross column">
+            <div class="wrapper">
+                <h2>Cross Browser Testing</h2>
+                <div class="clearfix">
+                    <div class="one-third"><i class="icon-docs"></i></div>
+                    <div class="two-thirds">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                    consequat. Duis aute irure dolor in reprehenderit in voluptate.</div>
+                </div>
+            </div>
+        </div>
+    </section>
+    */
+    ?>
 </div>
 
 <?php include 'footer.php'; ?>

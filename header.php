@@ -33,10 +33,12 @@
 </head>
 <body>
 
-<header class="clearfix">
-    <a href="">
-        <h1>KyleJasso.io</h1>
-        <h2>web developer</h2>
-    </a>
-</header>
+<?php if($page == 'index') : ?>
+    <header class="clearfix">
+        <a href="">
+            <h1>KyleJasso.io</h1>
+            <h2>web developer</h2>
+        </a>
+    </header>
+<?php endif ;?>
 <main class="<?php echo $page; ?>">
